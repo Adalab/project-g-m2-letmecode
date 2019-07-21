@@ -37,7 +37,7 @@
   @include flex-center();
 }
 
-.button--card {
+.button-card {
   @include button-reset();
   width: 199px;
   height: 50px;
@@ -45,11 +45,11 @@
   @include button-format ($color-bg-card-button, 12px, $box-shadow-button-card);
   @include link-none ($color-text-button);
 }
-.button--card-check {
+.button-card--check {
   background-color: $grey-off;
 }
 
-.button--img {
+.button-img {
   @include button-reset();
   width: 140px;
   height: 30px;
@@ -58,7 +58,7 @@
   @include link-none ($color-text-button);
 }
 
-.button--twitter {
+.button-twitter {
   @include button-reset();
   width: 181px;
   height: 30px;
