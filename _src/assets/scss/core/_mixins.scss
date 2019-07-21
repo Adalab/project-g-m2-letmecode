@@ -10,6 +10,7 @@
   background-position: center;
 }
 
+//text-format
 @mixin link-none ($color) {
   color: $color;
   text-decoration: none;
@@ -34,4 +35,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+@mixin button-format ($bg, $radius, $shadow) {
+  background-color: $bg;
+  border-radius: $radius;
+  box-shadow: $shadow;
 }

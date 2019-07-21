@@ -27,36 +27,49 @@
 
 
 /*buttons*/
-
 .button--start {
   display: inline-block;
   width: 129px;
   height: 42px;
-  border-radius: 21px;
-  background-color: $color-bg-landing-button;
+  font-size: $txt-md;
+  @include button-format ($color-bg-landing-button, 21px);
+  @include link-none ($color-text-button);
   @include flex-center();
 }
 
 .button--card {
   @include button-reset();
-  font-size: $txt-button;
-  @include link-none ($color-orange);
-  border: solid 2px $color-orange;
-  border-radius: 22.5px;
-  padding: 10px 25px;
-  transition: background-color ease 0.5s, color ease 0.5s;
-  &:hover {
-    background-color: $color-orange;
-    color: $color-txt-button;
-  }
-  @media all and (min-width:$tablet) {
-    padding: 10px 33px;
-  }
-  @media all and (min-width:$desktop) {
-    padding: 10px 67px;
-  }
+  width: 199px;
+  height: 50px;
+  font-size: $txt-lg;
+  @include button-format ($color-bg-card-button, 12px, $box-shadow-button-card);
+  @include link-none ($color-text-button);
+}
+.button--card-check {
+  background-color: $grey-off;
+}
+
+.button--img {
+  @include button-reset();
+  width: 140px;
+  height: 30px;
+  font-size: $txt-sm;
+  @include button-format ($color-bg-card-button, 3px, $box-shadow-button);
+  @include link-none ($color-text-button);
+}
+
+.button--twitter {
+  @include button-reset();
+  width: 181px;
+  height: 30px;
+  font-size: $txt-sm;
+  @include button-format ($blue-twitter, 3px, $box-shadow-button);
+  @include link-none ($color-text-button);
 }
 
 .button--reset {
   @include button-reset();
+  border-radius: 15px;
+  border: solid 1px $white;
+  color: $grey-dark;
 }
