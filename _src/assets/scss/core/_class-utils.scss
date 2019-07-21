@@ -1,0 +1,62 @@
+.txt__landind--lg {
+  margin: 0;
+  font-size: $txt-xl;
+  font-family: $font-merriweather;
+  color: $color-landing-title;
+  @media all and (min-width: $tablet) {
+    font-size: $txt-xxl;
+  }
+}
+.txt__landing--md {
+  margin: 0;
+  font-size: $txt-sm;
+  font-family: $font-open;
+  @media all and (min-width: $tablet) {
+    font-size: $txt-md;
+  }
+}
+
+// .txt__title--sm {
+//   margin: 0;
+//   font-size:
+//   font-family:
+//   @media all and (min-width: $tablet) {
+//     font-size:
+//   }
+// }
+
+
+/*buttons*/
+
+.button--start {
+  display: inline-block;
+  width: 129px;
+  height: 42px;
+  border-radius: 21px;
+  background-color: $color-bg-landing-button;
+  @include flex-center();
+}
+
+.button--card {
+  @include button-reset();
+  font-size: $txt-button;
+  @include link-none ($color-orange);
+  border: solid 2px $color-orange;
+  border-radius: 22.5px;
+  padding: 10px 25px;
+  transition: background-color ease 0.5s, color ease 0.5s;
+  &:hover {
+    background-color: $color-orange;
+    color: $color-txt-button;
+  }
+  @media all and (min-width:$tablet) {
+    padding: 10px 33px;
+  }
+  @media all and (min-width:$desktop) {
+    padding: 10px 67px;
+  }
+}
+
+.button--reset {
+  @include button-reset();
+}

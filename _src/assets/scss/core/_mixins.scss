@@ -1,0 +1,37 @@
+//bg colors
+@mixin bg-gradient($from, $to) {
+  background-image: linear-gradient(to bottom, $from, $to);
+}
+
+@mixin bg-img {
+  background-image: url(../images/tarjetas-molonas.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin link-none ($color) {
+  color: $color;
+  text-decoration: none;
+}
+
+//positions
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//buttons
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
