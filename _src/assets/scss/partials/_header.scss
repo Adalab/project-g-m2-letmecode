@@ -4,14 +4,16 @@
 .header__container {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .header__title {
   background-image: url('../images/tarjetas-molonas.png');
   background-repeat: no-repeat;
   color:black;
-  width:417px;
+  width:500px;
   height:1px;
   padding-top:107px;
+  margin:95px 35px 35.4px;
   overflow:hidden;
  }
 
