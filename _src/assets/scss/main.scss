@@ -1,8 +1,10 @@
-@import 'core/settings';
-@import 'core/links';
+/* Import de los partials scss*/
+@import 'partials/_header.scss';
+@import 'partials/_main.scss';
+@import 'partials/_footer.scss';
 
 body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	margin: 0;
+  margin: 0;
+  padding: 0;
 	height: 100vh;
 }
