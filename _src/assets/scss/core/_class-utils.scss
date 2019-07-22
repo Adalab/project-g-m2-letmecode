@@ -75,7 +75,10 @@
 
 .button--reset {
   @include button-reset();
+  padding: 5px 10px;
   border-radius: 15px;
   border: solid 1px $white;
   color: $grey-dark;
+  font-family: $font-open;
+  font-size: $txt-sm;
 }
