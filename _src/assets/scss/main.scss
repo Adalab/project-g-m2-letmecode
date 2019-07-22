@@ -1,8 +1,8 @@
-@import 'core/settings';
-@import 'core/links';
 
-body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	margin: 0;
-	height: 100vh;
-}
+@import 'core/_variables.scss';
+@import 'core/_mixins.scss';
+@import 'core/_class-utils.scss';
+@import 'components/_card-preview.scss';
+@import 'components/_card-submit.scss';
+
+
