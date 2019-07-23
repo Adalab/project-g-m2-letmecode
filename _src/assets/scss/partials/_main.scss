@@ -1,18 +1,28 @@
-.page__header {
-  background-color: $grey-light;
-  height:22vh;
-  background-color:red;
 
+
+.page__main {
+  height:80.6vh;
+  background-color:yellow;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+.main__wrapper{
+
+}
+.page__h1 {
+  background-color: $grey-light;
   text-align: center;
   margin:0;
   display:flex;
   justify-content:center;
   align-items:center;
-  background-color:green;
+
 
 }
 
-.header__title {
+.h1__title {
   background-image: url('../images/tarjetas-molonas.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -24,11 +34,6 @@
   background-color:blue;
   margin:0 35px;
  }
-
-.page__main {
-  height:58vh;
-  background-color:yellow;
-}
 
 .main__description {
   text-align: center;
