@@ -4,6 +4,10 @@
     border-bottom: solid 1px $grey-line;
 }
 
+.collapsable__header {
+    display: flex;
+}
+
 .collapsable__title {
     padding: 0;
     font-family: $font-open;
@@ -11,9 +15,8 @@
     font-weight: 600;
     color: $grey-dark;
     text-transform: uppercase;
+    flex-grow: 1;
 }
-
-.fill__container {}
 
 .field__tag {
     font-family: $font-open;
