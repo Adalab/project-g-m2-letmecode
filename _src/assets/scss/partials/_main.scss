@@ -8,10 +8,17 @@
   align-items:center;
 
 }
-.main__wrapper{
-
+.main__container{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  height:100%;
+  padding-bottom:35px;
 }
-.page__h1 {
+.main__wrapper{
+  padding-top:95px;
+}
+.main__title-container {
   background-color: $grey-light;
   text-align: center;
   margin:0;
@@ -84,6 +91,7 @@
   background-color: $blue;
   padding: 10px 20px;
   border-radius: 21px;
+  align-self:center;
 }
 
 
