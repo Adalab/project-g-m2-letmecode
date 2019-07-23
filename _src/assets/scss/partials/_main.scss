@@ -13,12 +13,27 @@
   font-family:$font-open;
   color:$color-landing-description;
 }
-.main__steps {}
+.main__steps {
+  list-style: none;
+  font-family: $font-open;
+  font-size: $txt-xs;
+  border: 1.5px solid $orange;
+  border-radius: 4px;
+}
 .steps__item {}
 .item__container {}
 .item__icon {}
 .item__name {}
-.start__link {}
+.start__link {
+  text-decoration: none;
+  font-family: $font-open;
+  font-size: $txt-md;
+  text-transform: uppercase;
+  color:$white;
+  background-color: $blue;
+  padding: 10px 20px;
+  border-radius: 21px;
+}
 
 
 
