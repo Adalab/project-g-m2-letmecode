@@ -1,0 +1,71 @@
+.form__fill {
+    padding: 0 20px 30px;
+    border: none;
+    border-bottom: solid 1px $grey-line;
+}
+
+.collapsable__header {
+    display: flex;
+}
+
+.collapsable__title {
+    padding: 0;
+    font-family: $font-open;
+    font-size: $txt-lg;
+    font-weight: 600;
+    color: $grey-dark;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.field__tag {
+    font-family: $font-open;
+    font-size: $txt-sm;
+    color: $green-dark;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin: 20px 0 7px 0;
+}
+
+.tag-photo {
+    text-transform: none;
+}
+
+.form__field {
+    border: solid 1px $green-light;
+    width: 281px;
+    height: 30px;
+    font-family: $font-open;
+    font-size: $txt-sm;
+    color: $grey-light-holder;
+}
+
+.photo__box {
+    display: flex;
+}
+
+.form__field-photo {
+    @include button-reset();
+    background-color: $orange;
+    font-family: $font-open;
+    font-size: $txt-sm;
+    color: $white;
+    line-height: 20px;
+    padding: 5px 22px;
+    border-radius: 3px;
+    box-shadow: $box-shadow-button;
+    width: 140px;
+    height: 30px;
+}
+
+.preview__photo {
+    border: solid 1px $green-light;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.fill__items {
+    display: flex;
+    flex-direction: column;
+}
