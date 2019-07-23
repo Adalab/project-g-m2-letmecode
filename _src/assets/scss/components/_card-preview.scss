@@ -58,4 +58,7 @@
   margin-right: 5px;
   @include flex-center();
 }
+.social-list__link {
+  @include link-none($green-dark);
+}
 
