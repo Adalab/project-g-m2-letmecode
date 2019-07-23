@@ -1,5 +1,5 @@
 .collapsable {
-    padding: 0 20px 30px;
+    padding: 0 0 30px;
     border: none;
     border-bottom: solid 1px $grey-line;
 }
@@ -25,6 +25,10 @@
     line-height: 20px;
     text-transform: capitalize;
     margin: 20px 0 7px 0;
+}
+
+.tag-name {
+    margin-top: 15px;
 }
 
 .tag-photo {

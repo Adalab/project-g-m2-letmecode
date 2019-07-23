@@ -1,0 +1,70 @@
+.collapsable {
+    margin: 0;
+    padding: 0;
+}
+
+.collapsable__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collapsable__title {
+    display: inline;
+    flex-grow: 1;
+}
+
+.collapsable__title {
+    font-family: $font-open;
+    font-size: $txt-lg;
+    font-weight: 600;
+    color: $grey-dark;
+    margin: 0;
+    padding: 0;
+}
+
+.collapsable__colors {
+    margin: 17px 0 0 0;
+}
+
+.palette {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0 0 19px;
+}
+
+.palette__label {
+    display: block;
+    font-family: $font-open;
+    font-size: $txt-sm;
+    color: $grey-dark;
+    text-transform: uppercase;
+}
+
+.colors {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+}
+
+.square-color {
+    width: 30px;
+    height: 1px;
+    padding-top: 24px;
+    overflow: hidden;
+}
+
+.txt__color--orange {
+    color: $orange;
+}
+
+.palette__container-colors {
+    align-items: center;
+}
+
+.input-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

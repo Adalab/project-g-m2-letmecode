@@ -2,21 +2,26 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Let me code Awesome Cards</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:900|Montserrat:400,700|Open+Sans:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let me code Awesome Cards</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:900|Montserrat:400,700|Open+Sans:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+
 </head>
 
 <body>
-  <partial src="_card-preview.html"></partial>
-  <form action="">
-    <partial src="_design.html"></partial>
-    <partial src="_card-fill.html"></partial>
-    <partial src="_card-submit.html"></partial>
-  </form>
+    <partial src="_card-header.html"></partial>
+    <main class="card__main">
+        <partial src="_card-preview.html"></partial>
+        <form class="form__container" action="">
+            <partial src="_card-design.html"></partial>
+            <partial src="_card-fill.html"></partial>
+            <partial src="_card-submit.html"></partial>
+        </form>
+    </main>
+    <partial src="_footer.html"></partial>
 </body>
 
 </html>
