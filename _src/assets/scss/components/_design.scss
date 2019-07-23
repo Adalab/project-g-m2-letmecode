@@ -1,3 +1,7 @@
+.collapsable {
+  margin: 0;
+  padding: 0;
+}
 .collapsable__header {
   display: flex;
   justify-content: center;
@@ -14,6 +18,8 @@
   font-size: $txt-lg;
   font-weight: 600;
   color: $grey-dark;
+  margin: 0;
+  padding: 0;
 }
 
 .palette {
@@ -36,8 +42,10 @@
 }
 
 .square-color {
-  width: 30px;
-  height: 25px;
+  width:30px;
+  height:1px;
+  padding-top: 24px;
+  overflow: hidden;
 }
 
 .txt__color--orange {
@@ -48,9 +56,9 @@
   align-items: center;
 }
 
-
 .input-box {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
