@@ -3,8 +3,8 @@
   background-image: linear-gradient(to bottom, $from, $to);
 }
 
-@mixin bg-img {
-  background-image: url(../images/tarjetas-molonas.svg);
+@mixin bg-img ($url){
+  background-image: url($url);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,6 +14,11 @@
 @mixin link-none ($color) {
   color: $color;
   text-decoration: none;
+}
+@mixin font-lg {
+  font-family: $font-open;
+  font-size: $txt-lg;
+  font-weight: 600;
 }
 
 //positions
