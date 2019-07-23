@@ -5,9 +5,13 @@
 @import 'partials/_main.scss';
 @import 'partials/_footer.scss';
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+body {
+
   height: 100vh;
   background-color: $grey-light;
+  text-align: center;
 }
