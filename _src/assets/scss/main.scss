@@ -1,5 +1,7 @@
-
+@import 'core/variables';
+@import 'components/_design';
 @import 'core/links';
+@import 'core/mixins';
 
 body {
 	background: url('../images/logo-adalab-80px.png') center center no-repeat;
