@@ -1,8 +1,11 @@
-.collapsable__header {
-    margin: 20px 0 19px;
+.form__fill {
+    padding: 0 20px 30px;
+    border: none;
+    border-bottom: solid 1px $grey-line;
 }
 
 .collapsable__title {
+    padding: 0;
     font-family: $font-open;
     font-size: $txt-lg;
     font-weight: 600;
@@ -10,12 +13,32 @@
     text-transform: uppercase;
 }
 
+.fill__container {}
+
 .field__tag {
     font-family: $font-open;
     font-size: $txt-sm;
     color: $green-dark;
     line-height: 20px;
     text-transform: capitalize;
+    margin: 20px 0 7px 0;
+}
+
+.tag-photo {
+    text-transform: none;
+}
+
+.form__field {
+    border: solid 1px $green-light;
+    width: 281px;
+    height: 30px;
+    font-family: $font-open;
+    font-size: $txt-sm;
+    color: $grey-light-holder;
+}
+
+.photo__box {
+    display: flex;
 }
 
 .form__field-photo {
@@ -28,14 +51,18 @@
     padding: 5px 22px;
     border-radius: 3px;
     box-shadow: $box-shadow-button;
-}
-
-.form__field {
-    border: solid 1px $green-light;
+    width: 140px;
+    height: 30px;
 }
 
 .preview__photo {
     border: solid 1px $green-light;
     width: 30px;
     height: 30px;
+    margin-left: 20px;
+}
+
+.fill__items {
+    display: flex;
+    flex-direction: column;
 }

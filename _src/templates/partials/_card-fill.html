@@ -1,20 +1,23 @@
 <fieldset class="form__fill">
     <div class="collapsable__header collapsable__fill">
+        <i class="far fa-keyboard txt__color--orange"></i>
         <h3 class="collapsable__title title__fill-2">rellena</h3>
     </div>
     <div class="fill__container ">
         <div class="fill__items items-name">
             <label class="field__tag tag-name" for="FullName">nombre completo</label>
-            <input class="form__field form__field-name" type="text" id="FullName" name="FullName">
+            <input class="form__field form__field-name" type="text" id="FullName" name="FullName" placeholder="Ej: Sally Jill">
         </div>
         <div class="fill__items items-job">
             <label class="field__tag tag-job" for="job">puesto</label>
-            <input class="form__field form__field-job" type="text" id="job" name="job">
+            <input class="form__field form__field-job" type="text" id="job" name="job" placeholder="Ej: Front-end unicorn">
         </div>
         <div class="fill__items items-photo">
-            <label class="field__tag tag-photo" for="photo">imagen de perfil</label>
-            <button class="form__field form__field-photo"> Añadir imagen</button>
-            <div class="preview__photo"></div>
+            <label class="field__tag tag-photo" for="photo">Imagen de perfil</label>
+            <div class="photo__box">
+                <button class="form__field form__field-photo"> Añadir imagen</button>
+                <div class="preview__photo"></div>
+            </div>
         </div>
         <div class="fill__items items-email">
             <label class="field__tag tag-mail" for="mail">email</label>
