@@ -1,6 +1,10 @@
 .card-preview {
     @include bg-gradient($silver, $grey-pale);
     @include flex-center();
+    @media all and (min-width: $tablet) {
+        order: 2;
+        flex-grow: 1;
+    }
 }
 
 .card-preview__container {

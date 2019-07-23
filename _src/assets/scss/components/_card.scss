@@ -1,0 +1,5 @@
+.card__main {
+    @media all and (min-width: $tablet) {
+        display: flex;
+    }
+}
