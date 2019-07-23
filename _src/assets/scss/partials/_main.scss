@@ -3,8 +3,16 @@
 }
 
 .main__description {}
-.description__title {}
-.description__text {}
+.description__title {
+  font-size:$txt-lg;
+  font-family:$font-merriweather;
+  color:$color-landing-title;
+}
+.description__text {
+  font-size:$txt-xs;
+  font-family:$font-open;
+  color:$color-landing-description;
+}
 .main__steps {}
 .steps__item {}
 .item__container {}
