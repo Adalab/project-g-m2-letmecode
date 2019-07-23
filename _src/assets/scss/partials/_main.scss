@@ -1,8 +1,7 @@
-
-
 .page__main {
+  background-color: $grey-light;
+  text-align: center;
   height:80.6vh;
-  background-color:yellow;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -38,7 +37,6 @@
   height:1px;
   padding-top:107px;
   overflow:hidden;
-  background-color:blue;
   margin:0 35px;
  }
 

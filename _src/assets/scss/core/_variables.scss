@@ -1,8 +1,8 @@
 /*medias-sizes and breakpoints*/
+
 $mobile: 320px;
 $tablet: 768px;
 $desktop: 1024px;
-
 //colors
 $beige-light: #f9f4dc;
 $black: #000000;
@@ -16,6 +16,8 @@ $grey: #6b6b6b;
 $grey-light: #f5f5f5;
 $grey-off: #d5d5d5;
 $grey-dark: #54585a;
+$grey-line:#d8d8d8;
+$grey-light-holder:#c5c5c5;
 $grey-pale: #dde9ed;
 $orange: #e17334;
 $red: #bd1010;
@@ -23,7 +25,6 @@ $red-dark: #420101;
 $silver: #bfcdd0;
 $white: #ffffff;
 $yellow: #eab052;
-
 //text and bg colors
 $grey-bg-landing: $grey-light;
 $color-bg-landing-button: $blue;
@@ -35,26 +36,23 @@ $color-footer-text: $grey;
 $color-icon: $orange;
 $color-arrow: $grey-dark;
 $color-bg-card-button: $orange;
-
 //pallete colors
 $color-pallete-1-dark: $green-dark;
 $color-pallete-1-medium: $blue;
 $color-pallete-1-light: $green-light;
-
 $color-pallete-2-dark: $red-dark;
 $color-pallete-2-medium: $red;
 $color-pallete-2-light: $orange;
-
 $color-pallete-3-dark: $blue-dark;
 $color-pallete-3-medium: $yellow;
 $color-pallete-3-light: $blue-light;
-
-
 //font family
-$font-open: "Open Sans", sans-serif;
-$font-montserrat: 'Montserrat', sans-serif;
-$font-merriweather: 'Merriweather', serif;
-
+$font-open: "Open Sans",
+sans-serif;
+$font-montserrat: 'Montserrat',
+sans-serif;
+$font-merriweather: 'Merriweather',
+serif;
 //text sizes
 $txt-xs: 12px;
 $txt-sm: 14px;
@@ -68,10 +66,5 @@ $txt-icon: 22.4px;
 //box-shadows
 $box-shadow-button: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 $box-shadow-button-card: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-$box-shadow-card: 0 1px 10px 0 $black, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-
-
-
-
-
-
+$box-shadow-card: 0 1px 10px 0 $black,
+0 1px 3px 0 rgba(0, 0, 0, 0.35);
