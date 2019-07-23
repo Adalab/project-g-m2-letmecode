@@ -1,4 +1,5 @@
 .card__main {
+  @include bg-gradient($grey-light, $white);
     @media all and (min-width: $tablet) {
         display: flex;
         padding: 20px 40px 20px 20px;
