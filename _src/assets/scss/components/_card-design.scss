@@ -27,10 +27,14 @@
     padding: 0;
 }
 
+.collapsable__colors {
+    margin: 17px 0 0 0;
+}
+
 .palette {
     display: flex;
     justify-content: space-between;
-    padding: 22px 0 0 39px;
+    padding: 22px 0 0 19px;
 }
 
 .palette__label {
