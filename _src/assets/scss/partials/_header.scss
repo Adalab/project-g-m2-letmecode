@@ -1,13 +1,18 @@
 .page__header {
   background-color: $grey-light;
+  height:22vh;
+  background-color:red;
 
-}
-
-.header__container {
   text-align: center;
   margin:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:green;
 
 }
+
+
 
 .header__title {
   background-image: url('../images/tarjetas-molonas.png');
@@ -18,5 +23,7 @@
   height:1px;
   padding-top:107px;
   overflow:hidden;
+  background-color:blue;
+  margin:0 35px;
  }
 

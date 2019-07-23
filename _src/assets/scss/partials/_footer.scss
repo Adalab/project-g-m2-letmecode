@@ -1,9 +1,11 @@
 .page__footer {
+
+  background-color:$white;
   display: flex;
   flex-direction: column;
   align-items: center;
   width:100%;
-  height:110px;
+  height:20%;
 }
 
 .footer__copyright {
