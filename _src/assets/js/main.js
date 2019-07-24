@@ -1,9 +1,7 @@
 'use strict';
 
-console.log('>> Ready :)');
-
 const collapsable = document.querySelector('.palette');
-const collapsableClick = document.querySelector('.collapsable');
+const collapsableClick = document.querySelector('.collapsable__header');
 
 function openCollapsable() {
 
