@@ -1,5 +1,4 @@
 .collapsable {
-  padding: 0 0 30px;
   border: none;
   border-bottom: solid 1px $grey-line;
 }
@@ -18,4 +17,17 @@
   text-transform: uppercase;
   margin: 0 10px;
   padding: 0;
+}
+.collapsable__item {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity linear 0.5s;
+}
+
+.collapsable--visible {
+  height: auto;
+  padding: 0 0 30px;
+  opacity: 1;
 }
