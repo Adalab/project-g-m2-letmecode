@@ -1,0 +1,21 @@
+.collapsable {
+  padding: 0 0 30px;
+  border: none;
+  border-bottom: solid 1px $grey-line;
+}
+
+.collapsable__header {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapsable__title {
+  flex-grow: 1;
+  @include font-lg;
+  color: $color-text;
+  text-transform: uppercase;
+  margin: 0 10px;
+  padding: 0;
+}
