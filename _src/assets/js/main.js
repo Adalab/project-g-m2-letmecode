@@ -14,3 +14,14 @@ function writing2(event) {
     previewJob.innerHTML = event.currentTarget.value;
 }
 formJob.addEventListener('keyup', writing2);
+
+
+//input icons
+const inputPhone = document.querySelector('.form__field-phone');
+const enlacePhone = document.querySelector('.phone__link');
+
+function writeIcon() {
+  enlacePhone.href = inputPhone.value
+}
+
+inputPhone.addEventListener('keyup', writeIcon);
