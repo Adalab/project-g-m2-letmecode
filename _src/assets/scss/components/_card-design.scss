@@ -31,11 +31,11 @@
     display: flex;
     justify-content: space-between;
     padding: 22px 0 0 19px;
-    display: none;
+    display: block;
 }
 
-.container--open {
-  display: block;
+.container--close {
+  display: none;
 }
 
 .palette__label {
