@@ -8,6 +8,13 @@
     display: flex;
 }
 
+.fill__container {
+  display: none;
+}
+
+.container--open {
+  display: block;
+}
 .collapsable__title {
     padding: 0;
     font-family: $font-open;
