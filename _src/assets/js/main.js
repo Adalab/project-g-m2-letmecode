@@ -51,10 +51,13 @@ const inputGitHub = document.querySelector('.form__field-github');
 const enlaceGitHub = document.querySelector('.github__link');
 
 function writeIcon6() {
-  const userName = inputGitHub.value;
-  const userNamePro = userName.substring(1,);
+  let userName = inputGitHub.value;
 
-  enlaceGitHub.href = `//github.com/${userNamePro}`;
+  if (userName[0] === '@') {
+    userName = userName.substring(1);
+  }
+
+  enlaceGitHub.href = `//github.com/${userName}`;
 }
 
 inputGitHub.addEventListener('keyup', writeIcon6);
