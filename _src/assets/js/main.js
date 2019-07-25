@@ -16,12 +16,42 @@ function writing2(event) {
 formJob.addEventListener('keyup', writing2);
 
 
-//input icons
+//input iconPhone
 const inputPhone = document.querySelector('.form__field-phone');
 const enlacePhone = document.querySelector('.phone__link');
 
-function writeIcon() {
-  enlacePhone.href = inputPhone.value
+function writeIcon3() {
+  enlacePhone.href = `phoneto:${inputPhone.value}`;
 }
 
-inputPhone.addEventListener('keyup', writeIcon);
+inputPhone.addEventListener('keyup', writeIcon3);
+
+//input iconEmail
+const inputEmail = document.querySelector('.form__field-mail');
+const enlaceEmail = document.querySelector('.email__link');
+
+function writeIcon4() {
+  enlaceEmail.href = `mailto:${inputEmail.value}`;
+}
+
+inputEmail.addEventListener('keyup', writeIcon4);
+
+//input iconLinkedin
+const inputLinkedIn = document.querySelector('.form__field-linkedin');
+const enlaceLinkedIn = document.querySelector('.linkedin__link');
+
+function writeIcon5() {
+  enlaceLinkedIn.href = `//${inputLinkedIn.value}`;
+}
+
+inputLinkedIn.addEventListener('keyup', writeIcon5);
+
+//input iconGitHub
+const inputGitHub = document.querySelector('.form__field-github');
+const enlaceGitHub = document.querySelector('.github__link');
+
+function writeIcon6() {
+  enlaceGitHub.href = `//github.com/${inputGitHub.value}`;
+}
+
+inputGitHub.addEventListener('keyup', writeIcon6);
