@@ -51,7 +51,10 @@ const inputGitHub = document.querySelector('.form__field-github');
 const enlaceGitHub = document.querySelector('.github__link');
 
 function writeIcon6() {
-  enlaceGitHub.href = `//github.com/${inputGitHub.value}`;
+  const userName = inputGitHub.value;
+  const userNamePro = userName.substring(1,);
+
+  enlaceGitHub.href = `//github.com/${userNamePro}`;
 }
 
 inputGitHub.addEventListener('keyup', writeIcon6);
