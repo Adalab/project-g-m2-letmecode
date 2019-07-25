@@ -13,8 +13,10 @@ const onFormClick = (event) => {
   if (header) {
     const nextBlock = header.nextElementSibling;
 
-    //falta añadir que la flecha se gire//
     nextBlock.classList.toggle('collapsable--visible');
+
+  //falta añadir que la flecha se gire//
+
   }
 
 
