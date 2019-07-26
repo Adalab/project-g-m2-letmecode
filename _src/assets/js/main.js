@@ -57,7 +57,11 @@ function onGitHubInput() {
     if (userName[0] === '@') {
         userName = userName.substring(1);
     }
-
+    if (event.currentTarget.value) {
+        previewGitHub.parentElement.classList.remove('hidden');
+    } else {
+        previewGitHub.parentElement.classList.add('hidden');
+    }
     previewGitHub.href = `//github.com/${userName}`;
 }
 
