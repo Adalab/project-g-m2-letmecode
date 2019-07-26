@@ -1,108 +1,98 @@
 .card-preview {
-    @include bg-gradient($silver, $grey-pale);
-    @include flex-center();
-    @media all and (min-width: $tablet) {
-        order: 2;
-        flex-grow: 1;
-        border-radius: 6px;
-    }
+  @include bg-gradient($silver, $grey-pale);
+  @include flex-center();
+  @media all and (min-width: $tablet) {
+    order: 2;
+    flex-grow: 1;
+    border-radius: 6px;
+  }
 }
 
 .card-preview__container {
-    margin: 0 40px;
-    padding: 40px 0;
-    max-width: 240px;
+  margin: 0 40px;
+  padding: 40px 0;
+  max-width: 240px;
 }
 
 .preview-card {
-    background-color: $white;
-    padding: 20px 0 10px;
-    margin-top: 20px;
-    .preview-card__title-container {
-      margin: 0 0 10px;
-      font-family: $font-montserrat;
-      position: relative;
-      &:before {
-          content: "";
-          position: absolute;
-          width: 5px;
-          height: 100%;
-          background-color: $green-dark;
-      }
-      .preview-card__name,
-      .preview-card__career {
-          margin: 0;
-          margin-left: 20px;
-      }
-      .preview-card__name {
-          font-size: $txt-lg;
-          color: $green-dark;
-      }
-      .preview-card__career {
-          font-size: $txt-md;
-          color: $color-text;
-      }
+  background-color: $white;
+  padding: 20px 0 10px;
+  margin-top: 20px;
+  .preview-card__title-container {
+    margin: 0 0 10px;
+    font-family: $font-montserrat;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 100%;
+      background-color: $green-dark;
+    }
+    .preview-card__name,
+    .preview-card__career {
+      margin: 0;
+      margin-left: 20px;
+    }
+    .preview-card__name {
+      font-size: $txt-lg;
+      color: $green-dark;
+    }
+    .preview-card__career {
+      font-size: $txt-md;
+      color: $color-text;
+    }
   }
 
   .preview-card__img {
-      width: 240px;
-      height: 200px;
-      @include bg-img("../images/avatar-icon-default.jpg");
+    width: 240px;
+    height: 200px;
+    @include bg-img("../images/avatar-icon-default.jpg");
   }
 
   .preview-card__social-list {
-      list-style: none;
-      display: flex;
-      margin: 10px 0 2px 20px;
+    list-style: none;
+    display: flex;
+    margin: 10px 0 2px 20px;
   }
 
   .social-list__icon {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .social-list__item {
-      border: 2px solid $green-light;
-      width: 32px;
-      height: 32px;
-      border-radius: 50px;
-      margin-right: 10px;
-      @include flex-center();
+    border: 2px solid $green-light;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    margin-right: 10px;
+    @include flex-center();
   }
 
   .social-list__link {
-      @include link-none($green-dark);
+    @include link-none($green-dark);
   }
 
 }
 /*estilos en colores verdes*/
 .preview-card-green {
-
   .preview-card__title-container {
-
     &:before {
-
-        background-color: $green-dark;
+      background-color: $green-dark;
     }
-
     .preview-card__name {
-
-        color:$green-dark;
+      color:$green-dark;
     }
     .preview-card__career {
-
-        color: $color-text;
+      color: $color-text;
     }
-}
-
-.social-list__item {
+  }
+  .social-list__item {
     border: 2px solid $green-light;
-
-}
-
-.social-list__link {
+  }
+  .social-list__link {
     @include link-none($green-dark);
-}
-
+  }
 }
 
 
@@ -111,31 +101,20 @@
 .preview-card-red {
 
   .preview-card__title-container {
-
     &:before {
-
-        background-color: $green-dark;
+      background-color:$red;
     }
-
     .preview-card__name {
-
-        color:red;
+      color:$red-dark;
     }
-    .preview-card__career {
 
-        color: $color-text;
-    }
-}
-
-.social-list__item {
-    border: 2px solid $green-light;
-
-}
-
-.social-list__link {
-    @include link-none($green-dark);
-}
-
+  }
+  .social-list__item {
+    border: 2px solid $tomato;
+  }
+  .social-list__link {
+    @include link-none($red-dark);
+  }
 }
 
 
@@ -144,29 +123,19 @@
 .preview-card-yellow {
 
   .preview-card__title-container {
-
     &:before {
-
-        background-color: $green-dark;
+      background-color:$yellow;
     }
-
     .preview-card__name {
-
-        color:yellow;
+      color:$blue-dark;
     }
-    .preview-card__career {
 
-        color: $color-text;
-    }
-}
-
-.social-list__item {
-    border: 2px solid $green-light;
-
-}
-
-.social-list__link {
-    @include link-none($green-dark);
-}
+  }
+  .social-list__item {
+    border: 2px solid $blue-light;
+  }
+  .social-list__link {
+    @include link-none($blue-dark);
+  }
 
 }
