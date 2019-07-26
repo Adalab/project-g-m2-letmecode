@@ -43,6 +43,11 @@ function onEmailInput() {
 }
 
 function onLinkedInInput() {
+    if (event.currentTarget.value) {
+        previewLinkedIn.parentElement.classList.remove('hidden');
+    } else {
+        previewLinkedIn.parentElement.classList.add('hidden');
+    }
     previewLinkedIn.href = `//${inputLinkedIn.value}`;
 }
 
