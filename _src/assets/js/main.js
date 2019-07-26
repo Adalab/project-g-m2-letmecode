@@ -30,7 +30,7 @@ function onPhoneInput() {
   }else {
     previewPhone.parentElement.classList.add('hidden');
   }
-  previewPhone.href = `phoneto:${inputPhone.value}`;
+  previewPhone.href = `tel:${inputPhone.value}`;
 }
 
 function onEmailInput() {
