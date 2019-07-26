@@ -1,6 +1,5 @@
 @import 'core/variables';
 @import 'core/mixins';
-@import 'core/class-utils';
 @import 'partials/main';
 @import 'partials/footer';
 @import 'components/card-header';
@@ -10,6 +9,7 @@
 @import 'components/card-design';
 @import 'components/card-fill';
 @import 'components/card-submit';
+@import 'core/class-utils';
 * {
     margin: 0;
     padding: 0;

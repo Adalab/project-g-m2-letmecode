@@ -1,63 +1,85 @@
 'use strict';
-// Escribe la info del input en la tarjeta
-const formName = document.querySelector('.form__field-name');
-const previewName = document.querySelector('.preview-card__name');
-const formJob = document.querySelector('.form__field-job');
-const previewJob = document.querySelector('.preview-card__career');
-
-function writing(event) {
-    previewName.innerHTML = event.currentTarget.value;
-}
-formName.addEventListener('keyup', writing);
-
-function writing2(event) {
-    previewJob.innerHTML = event.currentTarget.value;
-}
-formJob.addEventListener('keyup', writing2);
-
-
-//input iconPhone
+// Recogemos la info del input del formulario
+const inputName = document.querySelector('.form__field-name');
+const inputJob = document.querySelector('.form__field-job');
 const inputPhone = document.querySelector('.form__field-phone');
-const enlacePhone = document.querySelector('.phone__link');
-
-function writeIcon3() {
-  enlacePhone.href = `phoneto:${inputPhone.value}`;
-}
-
-inputPhone.addEventListener('keyup', writeIcon3);
-
-//input iconEmail
 const inputEmail = document.querySelector('.form__field-mail');
-const enlaceEmail = document.querySelector('.email__link');
-
-function writeIcon4() {
-  enlaceEmail.href = `mailto:${inputEmail.value}`;
-}
-
-inputEmail.addEventListener('keyup', writeIcon4);
-
-//input iconLinkedin
 const inputLinkedIn = document.querySelector('.form__field-linkedin');
-const enlaceLinkedIn = document.querySelector('.linkedin__link');
-
-function writeIcon5() {
-  enlaceLinkedIn.href = `//${inputLinkedIn.value}`;
-}
-
-inputLinkedIn.addEventListener('keyup', writeIcon5);
-
-//input iconGitHub
 const inputGitHub = document.querySelector('.form__field-github');
-const enlaceGitHub = document.querySelector('.github__link');
 
-function writeIcon6() {
-  const userName = inputGitHub.value;
-  const userNamePro = userName.substring(1,);
+// Recogemos la info del donde poner los input del formulario en la preview-card
+const previewName = document.querySelector('.preview-card__name');
+const previewJob = document.querySelector('.preview-card__career');
+const previewPhone = document.querySelector('.phone__link');
+const previewEmail = document.querySelector('.email__link');
+const previewLinkedIn = document.querySelector('.linkedin__link');
+const previewGitHub = document.querySelector('.github__link');
 
-  enlaceGitHub.href = `//github.com/${userNamePro}`;
+//Functions
+function onNameInput(event) {
+    if (event.currentTarget.value) {
+        previewName.innerHTML = event.currentTarget.value;
+    } else {
+        previewName.innerHTML = ('Nombre Apellidos');
+    }
 }
 
-inputGitHub.addEventListener('keyup', writeIcon6);
+function onJobInput(event) {
+    if (event.currentTarget.value) {
+        previewJob.innerHTML = event.currentTarget.value;
+    } else {
+        previewJob.innerHTML = ('Front-end developer');
+    }
+}
+
+function onPhoneInput() {
+    if (event.currentTarget.value) {
+        previewPhone.parentElement.classList.remove('hidden');
+    } else {
+        previewPhone.parentElement.classList.add('hidden');
+    }
+    previewPhone.href = `tel:${inputPhone.value}`;
+}
+
+function onEmailInput() {
+    if (event.currentTarget.value) {
+        previewEmail.parentElement.classList.remove('hidden');
+    } else {
+        previewEmail.parentElement.classList.add('hidden');
+    }
+    previewEmail.href = `mailto:${inputEmail.value}`;
+}
+
+function onLinkedInInput() {
+    if (event.currentTarget.value) {
+        previewLinkedIn.parentElement.classList.remove('hidden');
+    } else {
+        previewLinkedIn.parentElement.classList.add('hidden');
+    }
+    previewLinkedIn.href = `//${inputLinkedIn.value}`;
+}
+
+function onGitHubInput() {
+    let userName = inputGitHub.value;
+
+    if (userName[0] === '@') {
+        userName = userName.substring(1);
+    }
+    if (event.currentTarget.value) {
+        previewGitHub.parentElement.classList.remove('hidden');
+    } else {
+        previewGitHub.parentElement.classList.add('hidden');
+    }
+    previewGitHub.href = `//github.com/${userName}`;
+}
+//listeners
+inputName.addEventListener('keyup', onNameInput);
+inputJob.addEventListener('keyup', onJobInput);
+inputPhone.addEventListener('keyup', onPhoneInput);
+inputEmail.addEventListener('keyup', onEmailInput);
+inputLinkedIn.addEventListener('keyup', onLinkedInInput);
+inputGitHub.addEventListener('keyup', onGitHubInput);
+
 
 
 //-----partial------------CODIGO PARA CAMBIAR DE COLORES EL PREVIEW DE USUARIO
@@ -74,7 +96,7 @@ function changeColor (event) {
         previewCard.classList.remove('preview-card-green');
         previewCard.classList.remove('preview-card-yellow');
         previewCard.classList.add(event.currentTarget.value);
-      }
+}
 
 inputRadio1.addEventListener('click', changeColor);
 inputRadio2.addEventListener('click', changeColor);
@@ -99,7 +121,7 @@ function closeCollapsable(block) {
   block.classList.remove('collapsable--visible');
 }
 
-//callbacks
+
 const onFormClick = (event) => {
   const target = event.target;
   //.closest es un querySelector hacia arriba desde el elemento en el que se ha hecho target.
@@ -125,7 +147,9 @@ const onFormClick = (event) => {
 
     openCollapsable(header);
   }
-};
+}
 
 //listeners
 form.addEventListener('click', onFormClick);
+
+
