@@ -17,38 +17,43 @@ const previewGitHub = document.querySelector('.github__link');
 
 //Functions
 function onNameInput(event) {
-  previewName.innerHTML = event.currentTarget.value;
+    previewName.innerHTML = event.currentTarget.value;
 }
 
 function onJobInput(event) {
-  previewJob.innerHTML = event.currentTarget.value;
+    previewJob.innerHTML = event.currentTarget.value;
 }
 
 function onPhoneInput() {
-  if (event.currentTarget.value){
-    previewPhone.parentElement.classList.remove('hidden');
-  }else {
-    previewPhone.parentElement.classList.add('hidden');
-  }
-  previewPhone.href = `tel:${inputPhone.value}`;
+    if (event.currentTarget.value) {
+        previewPhone.parentElement.classList.remove('hidden');
+    } else {
+        previewPhone.parentElement.classList.add('hidden');
+    }
+    previewPhone.href = `tel:${inputPhone.value}`;
 }
 
 function onEmailInput() {
-  previewEmail.href = `mailto:${inputEmail.value}`;
+    if (event.currentTarget.value) {
+        previewEmail.parentElement.classList.remove('hidden');
+    } else {
+        previewEmail.parentElement.classList.add('hidden');
+    }
+    previewEmail.href = `mailto:${inputEmail.value}`;
 }
 
 function onLinkedInInput() {
-  previewLinkedIn.href = `//${inputLinkedIn.value}`;
+    previewLinkedIn.href = `//${inputLinkedIn.value}`;
 }
 
 function onGitHubInput() {
-  let userName = inputGitHub.value;
+    let userName = inputGitHub.value;
 
-  if (userName[0] === '@') {
-    userName = userName.substring(1);
-  }
+    if (userName[0] === '@') {
+        userName = userName.substring(1);
+    }
 
-  previewGitHub.href = `//github.com/${userName}`;
+    previewGitHub.href = `//github.com/${userName}`;
 }
 
 //listeners
