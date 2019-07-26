@@ -74,4 +74,99 @@
   }
 
 }
+/*estilos en colores verdes*/
+.preview-card-green {
 
+  .preview-card__title-container {
+
+    &:before {
+
+        background-color: $green-dark;
+    }
+
+    .preview-card__name {
+
+        color:$green-dark;
+    }
+    .preview-card__career {
+
+        color: $color-text;
+    }
+}
+
+.social-list__item {
+    border: 2px solid $green-light;
+
+}
+
+.social-list__link {
+    @include link-none($green-dark);
+}
+
+}
+
+
+
+/*estilos en colores rojos*/
+.preview-card-red {
+
+  .preview-card__title-container {
+
+    &:before {
+
+        background-color: $green-dark;
+    }
+
+    .preview-card__name {
+
+        color:red;
+    }
+    .preview-card__career {
+
+        color: $color-text;
+    }
+}
+
+.social-list__item {
+    border: 2px solid $green-light;
+
+}
+
+.social-list__link {
+    @include link-none($green-dark);
+}
+
+}
+
+
+//damos estilos a la tarjeta en paleta amarilla
+
+.preview-card-yellow {
+
+  .preview-card__title-container {
+
+    &:before {
+
+        background-color: $green-dark;
+    }
+
+    .preview-card__name {
+
+        color:yellow;
+    }
+    .preview-card__career {
+
+        color: $color-text;
+    }
+}
+
+.social-list__item {
+    border: 2px solid $green-light;
+
+}
+
+.social-list__link {
+    @include link-none($green-dark);
+}
+
+}

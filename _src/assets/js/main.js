@@ -69,10 +69,13 @@ const inputRadio3 = document.querySelector('.js__radio3');
 
 const previewCard = document.querySelector('.js__preview-card');
 
-function changeColor (palleteNew) {
+function changeColor (event) {
+        previewCard.classList.remove('preview-card-red');
+        previewCard.classList.remove('preview-card-green');
+        previewCard.classList.remove('preview-card-yellow');
+        previewCard.classList.add(event.currentTarget.value);
+      }
 
-}
-
-inputRadio1.addEventListener('click', changeColor(palleteNew));
-inputRadio2.addEventListener('click', changeColor(palleteNew));
-inputRadio3.addEventListener('click', changeColor(palleteNew));
+inputRadio1.addEventListener('click', changeColor);
+inputRadio2.addEventListener('click', changeColor);
+inputRadio3.addEventListener('click', changeColor);
