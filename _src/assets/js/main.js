@@ -60,7 +60,7 @@ function writeIcon6() {
 inputGitHub.addEventListener('keyup', writeIcon6);
 
 
-//CODIGO PARA CAMBIAR DE COLORES EL PREVIEW DE USUARIO
+//-----partial------------CODIGO PARA CAMBIAR DE COLORES EL PREVIEW DE USUARIO
 
 //escuchamos los input radio
 const inputRadio1 = document.querySelector('.js__radio1');
