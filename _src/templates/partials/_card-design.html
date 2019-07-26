@@ -1,36 +1,38 @@
 <fieldset class="collapsable user_colors">
-    <div class="collapsable__header collapsable__colors">
-        <i class="far fa-object-ungroup txt__color--orange"></i>
-        <h2 class="collapsable__title title__colors">Diseña</h2>
-        <i class="fas fa-chevron-down txt__color--grey-dark collapsable--rotate"></i>
+  <div class="collapsable__header collapsable__colors">
+    <i class="far fa-object-ungroup txt__color--orange"></i>
+    <h2 class="collapsable__title title__colors">Diseña</h2>
+    <i class="fas fa-chevron-down txt__color--grey-dark collapsable--rotate"></i>
+  </div>
+  <div class="palette collapsable__item collapsable--visible">
+    <label class="palette__label" for="p1">colores</label>
+    <div class="palette__container-colors">
+      <div class="input-box">
+        <input class="palette__radio js__radio1" id="p1" type="radio" value="preview-card-green" name="palette" checked>
+        <ul class="colors">
+          <li class="square-color" style="background-color: #114e4e">dark green blue</li>
+          <li class="square-color" style="background-color: #438792">dirty blue</li>
+          <li class="square-color" style="background-color: #a2deaf">hospital green</li>
+        </ul>
+      </div>
+      <label class="palette__label" for="p2"></label>
+      <div class="input-box">
+        <input class="palette__radio js__radio2" id="p2" type="radio" value="preview-card-red" name="palette">
+        <ul class="colors">
+          <li class="square-color" style="background-color: #420101">dried blood</li>
+          <li class="square-color" style="background-color: #bd1010">rusty red</li>
+          <li class="square-color" style="background-color: #e95626">tomato</li>
+        </ul>
+      </div>
+      <label class="palette__label" for="p3"></label>
+      <div class="input-box">
+        <input class="palette__radio js__radio3" id="p3" type="radio" value="preview-card-yellow" name="palette">
+        <ul class="colors">
+          <li class="square-color" style="background-color: #3e5b65">slate</li>
+          <li class="square-color" style="background-color: #eab052">faded orange</li>
+          <li class="square-color" style="background-color: #a0c0cf">light grey blue</li>
+        </ul>
+      </div>
     </div>
-    <div class="palette collapsable__item collapsable--visible">
-        <label class="palette__label" for="p1">colores</label>
-        <div class="palette__container-colors">
-            <div class="input-box">
-                <input class="palette__radio js__radio1" id="p1" type="radio" value="preview-card-green" name="palette" checked>
-                <ul class="colors">
-                    <li class="square-color" style="background-color: #114e4e">dark green blue</li>
-                    <li class="square-color" style="background-color: #438792">dirty blue</li>
-                    <li class="square-color" style="background-color: #a2deaf">hospital green</li>
-                </ul>
-            </div>
-            <div class="input-box">
-                <input class="palette__radio js__radio2" id="p1" type="radio" value="preview-card-red" name="palette">
-                <ul class="colors">
-                    <li class="square-color" style="background-color: #420101">dried blood</li>
-                    <li class="square-color" style="background-color: #bd1010">rusty red</li>
-                    <li class="square-color" style="background-color: #e95626">tomato</li>
-                </ul>
-            </div>
-            <div class="input-box">
-                <input class="palette__radio js__radio3" id="p1" type="radio" value="preview-card-yellow" name="palette">
-                <ul class="colors">
-                    <li class="square-color" style="background-color: #3e5b65">slate</li>
-                    <li class="square-color" style="background-color: #eab052">faded orange</li>
-                    <li class="square-color" style="background-color: #a0c0cf">light grey blue</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+  </div>
 </fieldset>
