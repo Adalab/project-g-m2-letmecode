@@ -7,7 +7,7 @@ const inputEmail = document.querySelector('.form__field-mail');
 const inputLinkedIn = document.querySelector('.form__field-linkedin');
 const inputGitHub = document.querySelector('.form__field-github');
 
-// Recogemos la info del donde poner los imput del formulario en la preview-card
+// Recogemos la info del donde poner los input del formulario en la preview-card
 const previewName = document.querySelector('.preview-card__name');
 const previewJob = document.querySelector('.preview-card__career');
 const previewPhone = document.querySelector('.phone__link');
@@ -17,11 +17,19 @@ const previewGitHub = document.querySelector('.github__link');
 
 //Functions
 function onNameInput(event) {
-    previewName.innerHTML = event.currentTarget.value;
+    if (event.currentTarget.value) {
+        previewName.innerHTML = event.currentTarget.value;
+    } else {
+        previewName.innerHTML = (`Nombre Apellidos`);
+    }
 }
 
 function onJobInput(event) {
-    previewJob.innerHTML = event.currentTarget.value;
+    if (event.currentTarget.value) {
+        previewJob.innerHTML = event.currentTarget.value;
+    } else {
+        previewJob.innerHTML = (`Fron-end developer`);
+    }
 }
 
 function onPhoneInput() {
