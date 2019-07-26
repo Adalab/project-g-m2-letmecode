@@ -28,7 +28,7 @@ function onJobInput(event) {
     if (event.currentTarget.value) {
         previewJob.innerHTML = event.currentTarget.value;
     } else {
-        previewJob.innerHTML = (`Fron-end developer`);
+        previewJob.innerHTML = (`Front-end developer`);
     }
 }
 
