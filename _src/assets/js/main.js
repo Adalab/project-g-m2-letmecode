@@ -58,3 +58,21 @@ function writeIcon6() {
 }
 
 inputGitHub.addEventListener('keyup', writeIcon6);
+
+
+//CODIGO PARA CAMBIAR DE COLORES EL PREVIEW DE USUARIO
+
+//escuchamos los input radio
+const inputRadio1 = document.querySelector('.js__radio1');
+const inputRadio2 = document.querySelector('.js__radio2');
+const inputRadio3 = document.querySelector('.js__radio3');
+
+const previewCard = document.querySelector('.js__preview-card');
+
+function changeColor (palleteNew) {
+
+}
+
+inputRadio1.addEventListener('click', changeColor(palleteNew));
+inputRadio2.addEventListener('click', changeColor(palleteNew));
+inputRadio3.addEventListener('click', changeColor(palleteNew));
