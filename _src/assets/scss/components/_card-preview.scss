@@ -47,7 +47,7 @@
   .preview-card__img {
     width: 240px;
     height: 200px;
-    @include bg-img("../images/avatar-icon-default.jpg");
+    @include bg-img("../images/avatar_penguin.png");
   }
 
   .preview-card__social-list {
