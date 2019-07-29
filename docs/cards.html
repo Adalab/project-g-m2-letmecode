@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <title>Let me code Awesome Cards</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:900|Montserrat:400,700|Open+Sans:400,600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    
+    <body class="page__cards">
+        <header class="page__header">
+             <h1 class="header__title">Awesome profile-cards</h1>
+
+        </header>
+        <main class="card__main">
+            <section class="card-preview">
+                <div class="card-preview__container">
+                    <button class="button--reset"> <i class="far fa-trash-alt"></i>
+ <span class="button__text">Reset</span>
+
+                    </button>
+                    <div class="preview-card js__preview-card">
+                        <div class="preview-card__title-container">
+                             <h4 class="preview-card__name">Nombre Apellido</h4>
+
+                             <h5 class="preview-card__career">Front-end developer</h5>
+
+                        </div>
+                        <div class="preview-card__img"></div>
+                        <ul class="preview-card__social-list">
+                            <li class="social-list__item hidden"> <a href="#phone" target="_blank" class="social-list__link phone__link">
+                        <i class="fas fa-mobile-alt social-list__icon"></i>
+                    </a>
+
+                            </li>
+                            <li class="social-list__item hidden"> <a href="#email" target="_blank" class="social-list__link email__link">
+                        <i class="far fa-envelope social-list__icon"></i>
+                    </a>
+
+                            </li>
+                            <li class="social-list__item hidden"> <a href="#linkedin" target="_blank" class="social-list__link linkedin__link">
+                        <i class="fab fa-linkedin-in social-list__icon"></i>
+                    </a>
+
+                            </li>
+                            <li class="social-list__item hidden"> <a href="#github" target="_blank" class="social-list__link github__link">
+                        <i class="fab fa-github-alt social-list__icon"></i>
+                    </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <form class="form__container" action="">
+                <fieldset class="collapsable user_colors">
+                    <div class="collapsable__header collapsable__colors"> <i class="far fa-object-ungroup txt__color--orange"></i>
+
+                         <h2 class="collapsable__title title__colors">Diseña</h2>
+ <i class="fas fa-chevron-down txt__color--grey-dark collapsable--rotate"></i>
+
+                    </div>
+                    <div class="palette collapsable__item collapsable--visible">
+                        <label class="palette__label" for="p1">colores</label>
+                        <div class="palette__container-colors">
+                            <div class="input-box">
+                                <input class="palette__radio js__radio1" id="p1" type="radio" value="preview-card-green"
+                                name="palette" checked>
+                                <ul class="colors">
+                                    <li class="square-color" style="background-color: #114e4e">dark green blue</li>
+                                    <li class="square-color" style="background-color: #438792">dirty blue</li>
+                                    <li class="square-color" style="background-color: #a2deaf">hospital green</li>
+                                </ul>
+                            </div>
+                            <label class="palette__label" for="p2"></label>
+                            <div class="input-box">
+                                <input class="palette__radio js__radio2" id="p2" type="radio" value="preview-card-red"
+                                name="palette">
+                                <ul class="colors">
+                                    <li class="square-color" style="background-color: #420101">dried blood</li>
+                                    <li class="square-color" style="background-color: #bd1010">rusty red</li>
+                                    <li class="square-color" style="background-color: #e95626">tomato</li>
+                                </ul>
+                            </div>
+                            <label class="palette__label" for="p3"></label>
+                            <div class="input-box">
+                                <input class="palette__radio js__radio3" id="p3" type="radio" value="preview-card-yellow"
+                                name="palette">
+                                <ul class="colors">
+                                    <li class="square-color" style="background-color: #3e5b65">slate</li>
+                                    <li class="square-color" style="background-color: #eab052">faded orange</li>
+                                    <li class="square-color" style="background-color: #a0c0cf">light grey blue</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="collapsable form__fill">
+                    <div class="collapsable__header collapsable__fill"> <i class="far fa-keyboard txt__color--orange"></i>
+
+                         <h3 class="collapsable__title title__fill">rellena</h3>
+ <i class="fas fa-chevron-down txt__color--grey-dark"></i>
+
+                    </div>
+                    <div class="fill__container collapsable__item">
+                        <div class="fill__items items-name">
+                            <label class="field__tag tag-name" for="FullName">nombre completo</label>
+                            <input class="form__field form__field-name" type="text"
+                            id="FullName" name="FullName" placeholder="Ej: Sally Jill">
+                        </div>
+                        <div class="fill__items items-job">
+                            <label class="field__tag tag-job" for="job">puesto</label>
+                            <input class="form__field form__field-job" type="text" id="job"
+                            name="job" placeholder="Ej: Front-end unicorn">
+                        </div>
+                        <div class="fill__items items-photo">
+                            <label class="field__tag tag-photo" for="photo">Imagen de perfil</label>
+                            <div class="photo__box">
+                                <button class="form__field form__field-photo">Añadir imagen</button>
+                                <div class="preview__photo"></div>
+                            </div>
+                        </div>
+                        <div class="fill__items items-email">
+                            <label class="field__tag tag-mail" for="mail">email</label>
+                            <input class="form__field form__field-mail" type="email"
+                            id="mail" name="mail" placeholder="Ej:sally-hill@gmail.com">
+                        </div>
+                        <div class="fill__items items-phone">
+                            <label class="field__tag tag-phone" for="phone">teléfono</label>
+                            <input class="form__field form__field-phone" type="tel"
+                            id="phone" name="phone" placeholder="Ej:555-55-55-55">
+                        </div>
+                        <div class="fill__items items-linkedin">
+                            <label class="field__tag tag-linkedin" for="linkedin">linkedin</label>
+                            <input class="form__field form__field-linkedin" type="text"
+                            id="linkedin" name="linkedin" placeholder="Ej:linkedin.com/in/sally.hill">
+                        </div>
+                        <div class="fill__items items-github">
+                            <label class="field__tag tag-github" for="github">github</label>
+                            <input class="form__field form__field-github" type="text"
+                            id="github" name="github" placeholder="Ej:@sally-hill">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="collapsable">
+                    <div class="collapsable__header"> <i class="fas fa-share-alt txt__color--orange"></i>
+
+                         <h2 class="collapsable__title">Comparte</h2>
+ <i class="fas fa-chevron-down txt__color--grey-dark"></i>
+
+                    </div>
+                    <div class="form__submit collapsable__container collapsable__item">
+                        <button type="submit" class="form__button button-card"> <i class="far fa-address-card"></i>
+ <span class="form__button-text">Crear tarjeta</span>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="form__success collapsable collapsable__container">
+                     <h2 class="succes__title txt__color--grey-dark">La tarjeta ha sido creada con exito</h2>
+ <a href="" class="success__link">url??????</a>
+
+                    <button class="success__button-twitter button-twitter"> <i class="fab fa-twitter "></i>
+ <span class="success__button-text">Compartir en twitter</span>
+
+                    </button>
+                </div>
+            </form>
+        </main>
+        <footer class="page__footer"> <span class="footer__copyright">Awesome profile-cards @2019</span>
+ <a class="footer__link"
+            href="https://adalab.es/" target="blank">
+      <img class="footer__logo" src="../assets/images/logo-adalab-80px.png" alt="Logotipo de Adalab" />
+    </a>
+
+        </footer>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+
+</html>
