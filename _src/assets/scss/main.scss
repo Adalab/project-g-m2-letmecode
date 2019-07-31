@@ -24,3 +24,11 @@
         align-items: space-between;
     }
 }
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: space-between;
+}
