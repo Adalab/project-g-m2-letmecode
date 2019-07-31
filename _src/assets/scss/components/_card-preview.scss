@@ -33,6 +33,9 @@
     .preview-card__career {
       margin: 0;
       margin-left: 20px;
+      max-width: 200px;
+      overflow: hidden;
+      word-break: break-word;
     }
     .preview-card__name {
       font-size: $txt-lg;
