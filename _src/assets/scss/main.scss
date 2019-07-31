@@ -1,11 +1,11 @@
 @import 'core/variables';
 @import 'core/mixins';
-@import 'partials/main';
-@import 'partials/footer';
+@import 'components/landing-main';
+@import 'components/footer';
 @import 'components/card-header';
-@import 'components/card';
+@import 'components/card-main';
 @import 'components/card-preview';
-@import 'components/collapsable';
+@import 'components/card-collapsable';
 @import 'components/card-design';
 @import 'components/card-fill';
 @import 'components/card-submit';
@@ -14,13 +14,21 @@
     margin: 0;
     padding: 0;
 }
-.page__cards{
-  @media all and (min-width: $tablet) {
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    align-items:space-between;
-    }
 
+.page__cards {
+    @media all and (min-width: $tablet) {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: space-between;
+    }
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: space-between;
 }
