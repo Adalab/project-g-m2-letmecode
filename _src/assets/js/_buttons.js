@@ -9,9 +9,10 @@ const twitterButton = document.querySelector('.button-twitter');
 function twitter() {
   twitterShareCard.classList.remove('hidden');
   submitButton.classList.add('not-available');
-  const twitterText = 'Ey!%20This%20is%20my%20new%20profile%20card%20:)';
   const cardLink = 'https://fonts.google.com/'; //link de prueba CAMBIAAAR!!
-  twitterButton.href = `https://twitter.com/intent/tweet?text=${twitterText} ${cardLink}`;
+  const twitterText = encodeURIComponent('Hey! This is my new profile card :)');
+  const hashtags = encodeURIComponent('adalab,js,css');
+  twitterButton.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${cardLink}&hashtags=${hashtags}`;
 }
 
 submitButton.addEventListener('click', twitter);
