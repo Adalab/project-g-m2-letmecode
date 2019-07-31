@@ -2,16 +2,16 @@
 // Recogemos la info del input del formulario
 const inputName = document.querySelector('.form__field-name');
 const inputJob = document.querySelector('.form__field-job');
-const inputPhone = document.querySelector('.form__field-phone');
 const inputEmail = document.querySelector('.form__field-mail');
+const inputPhone = document.querySelector('.form__field-phone');
 const inputLinkedIn = document.querySelector('.form__field-linkedin');
 const inputGitHub = document.querySelector('.form__field-github');
 
 // Recogemos la info del donde poner los input del formulario en la preview-card
 const previewName = document.querySelector('.preview-card__name');
 const previewJob = document.querySelector('.preview-card__career');
-const previewPhone = document.querySelector('.phone__link');
 const previewEmail = document.querySelector('.email__link');
+const previewPhone = document.querySelector('.phone__link');
 const previewLinkedIn = document.querySelector('.linkedin__link');
 const previewGitHub = document.querySelector('.github__link');
 
