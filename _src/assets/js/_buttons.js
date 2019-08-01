@@ -12,7 +12,7 @@ function sendRequest() {
     email: inputPhone.value,
     phone: inputEmail.value,
     linkedin: inputLinkedIn.value,
-    github: inputGitHub.value,
+    github: formatGithubUserName(inputGitHub.value),
     photo: fr.result
   };
   const json = JSON.stringify(requestData);
