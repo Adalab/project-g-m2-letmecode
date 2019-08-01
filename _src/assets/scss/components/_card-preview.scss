@@ -50,7 +50,9 @@
   .preview-card__img {
     width: 240px;
     height: 200px;
-    @include bg-img("../images/avatar_penguin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .preview-card__social-list {

@@ -5,9 +5,9 @@
 
 @mixin bg-img ($url){
   background-image: url($url);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 //text-format
