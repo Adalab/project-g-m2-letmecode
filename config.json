@@ -16,13 +16,7 @@
     "dist": "docs/assets/css/"
   },
   "js": {
-    "src": ["_src/assets/js/main.js",
-       "_src/assets/js/_collapsable.js",
-       "_src/assets/js/_palette.js",
-       "_src/assets/js/_form.js",
-       "_src/assets/js/_default-image.js",
-       "_src/assets/js/_input-image.js",
-       "_src/assets/js/_buttons.js"],
+    "src": ["_src/assets/js/main.js", "_src/assets/js/_collapsable.js", "_src/assets/js/_palette.js", "_src/assets/js/_form.js", "_src/assets/js/_default-image.js", "_src/assets/js/_input-image.js", "_src/assets/js/_buttons.js"],
     "dest": "public/assets/js/",
     "dist": "docs/assets/js/"
   },

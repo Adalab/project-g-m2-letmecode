@@ -56,7 +56,7 @@ function onLinkedInInput() {
     } else {
         previewLinkedIn.parentElement.classList.add('hidden');
     }
-    previewLinkedIn.href = `//linkedin.com/in/${inputLinkedIn.value}`;
+    previewLinkedIn.href = `//${inputLinkedIn.value}`;
 }
 
 function onGitHubInput() {
