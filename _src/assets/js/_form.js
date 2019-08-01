@@ -75,7 +75,7 @@ function onGitHubInput() {
 //listeners
 inputName.addEventListener('keyup', onNameInput);
 inputJob.addEventListener('keyup', onJobInput);
-inputPhone.addEventListener('keyup', onPhoneInput);
 inputEmail.addEventListener('keyup', onEmailInput);
+inputPhone.addEventListener('keyup', onPhoneInput);
 inputLinkedIn.addEventListener('keyup', onLinkedInInput);
 inputGitHub.addEventListener('keyup', onGitHubInput);
