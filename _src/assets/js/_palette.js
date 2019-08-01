@@ -8,11 +8,18 @@ const inputRadio3 = document.querySelector('.js__radio3');
 
 const previewCard = document.querySelector('.js__preview-card');
 
+const palette = {
+  '1': 'preview-card-green',
+  '2': 'preview-card-red',
+  '3': 'preview-card-yellow'
+};
+
 function changeColor (event) {
-        previewCard.classList.remove('preview-card-red');
-        previewCard.classList.remove('preview-card-green');
-        previewCard.classList.remove('preview-card-yellow');
-        previewCard.classList.add(event.currentTarget.value);
+  const color = palette[event.currentTarget.value];
+  previewCard.classList.remove('preview-card-red');
+  previewCard.classList.remove('preview-card-green');
+  previewCard.classList.remove('preview-card-yellow');
+  previewCard.classList.add(color);
 }
 
 inputRadio1.addEventListener('click', changeColor);

@@ -1,19 +1,19 @@
 'use strict';
 //crear tarjeta
-// const radio = document.querySelectorAll('input').focus();
 const successLink = document.querySelector('.success__link');
 let cardLink = ''; //link de tarjeta creada
 
 function sendRequest() {
+  const checkedRadio = document.querySelector('input[name="palette"]:checked');
   const requestData = {
-    palette: 1,
+    palette: checkedRadio.value,
     name: inputName.value,
     job: inputJob.value,
     email: inputPhone.value,
     phone: inputEmail.value,
     linkedin: inputLinkedIn.value,
     github: inputGitHub.value,
-    photo: fr.result,
+    photo: fr.result
   };
   const json = JSON.stringify(requestData);
 
