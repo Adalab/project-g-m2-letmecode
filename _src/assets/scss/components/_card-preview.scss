@@ -33,6 +33,9 @@
     .preview-card__career {
       margin: 0;
       margin-left: 20px;
+      max-width: 200px;
+      overflow: hidden;
+      word-break: break-word;
     }
     .preview-card__name {
       font-size: $txt-lg;
@@ -47,7 +50,9 @@
   .preview-card__img {
     width: 240px;
     height: 200px;
-    @include bg-img("../images/avatar_penguin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .preview-card__social-list {
