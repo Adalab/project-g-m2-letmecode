@@ -2,10 +2,11 @@
 //crear tarjeta
 // const radio = document.querySelectorAll('input').focus();
 const btnCreate = document.querySelector('.button-card');
+const successLink = document.querySelector('.success__link');
 
 function sendRequest() {
 const json = {
-  "palette": inputRadio1.value,
+  "palette": 1,
   "name": inputName.value,
   "job": inputJob.value,
   "email": inputPhone.value,
@@ -28,11 +29,11 @@ const json = {
     .catch(error => console.log(error));
 };
 
-function showURL(result) {
+function showURL(data) {
   if (data.success) {
-    console.log('<a href=' + data.cardURL + '>' + data.cardURL + '</a>');
+    successLink.innerHTML = '<a href=' + data.cardURL + '>' + data.cardURL + '</a>';
   } else {
-    console.log('ERROR:' + data.error);
+    successLink.innerHTML = 'ERROR:' + data.error;
   }
 }
 
