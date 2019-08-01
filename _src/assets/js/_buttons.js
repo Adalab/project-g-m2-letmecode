@@ -24,7 +24,7 @@ function sendRequest() {
       'content-type': 'application/json'
     }
   })
-    .then(response =>  response.json())
+    .then(response => response.json())
     .then(data => {
       showURL(data);
       saveTwitterURL(data);
@@ -45,13 +45,12 @@ function showURL(data) {
   }
 }
 
-
 //añadir funcionalidad botón de twitter (compartir mensaje y url de la tarjeta creada)
 const submitButton = document.querySelector('.button-card');
 const twitterShareCard = document.querySelector('.form__success-twitter');
 const twitterButton = document.querySelector('.button-twitter');
 
-function twitter() {
+function showTwitterData() {
   twitterShareCard.classList.remove('hidden');
 
   const twitterText = encodeURIComponent('Hey! This is my new profile card :)');
@@ -59,10 +58,13 @@ function twitter() {
   twitterButton.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${cardLink}&hashtags=${hashtags}`;
 }
 
-submitButton.addEventListener('click', function(event){
+submitButton.addEventListener('click', function(){
   submitButton.classList.add('not-available');
-  sendRequest(event).then(function(){
-    twitter(event);
+
+  sendRequest().then(function(){
+    showTwitterData();
+  }).finally(function(){
+    submitButton.classList.remove('not-available');
   });
 });
 
