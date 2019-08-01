@@ -58,7 +58,8 @@ function showTwitterData() {
   twitterButton.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${cardLink}&hashtags=${hashtags}`;
 }
 
-submitButton.addEventListener('click', function(){
+form.addEventListener('submit', function(event){
+  event.preventDefault();
   submitButton.classList.add('not-available');
 
   sendRequest().then(function(){
