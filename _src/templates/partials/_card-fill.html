@@ -7,23 +7,23 @@
     <div class="fill__container collapsable__item">
         <div class="fill__items items-name">
             <label class="field__tag tag-name" for="FullName">nombre completo</label>
-            <input class="form__field form__field-name" type="text" id="FullName" name="FullName" placeholder="Ej: Sally Jill">
+            <input class="form__field form__field-name" type="text" id="FullName" name="FullName" placeholder="Ej: Sally Jill" required>
         </div>
         <div class="fill__items items-job">
             <label class="field__tag tag-job" for="job">puesto</label>
-            <input class="form__field form__field-job" type="text" id="job" name="job" placeholder="Ej: Front-end unicorn">
+            <input class="form__field form__field-job" type="text" id="job" name="job" placeholder="Ej: Front-end unicorn" required>
         </div>
         <div class="fill__items items-photo">
             <label class="field__tag tag-photo" for="photo">Imagen de perfil</label>
-            <input type="file" name="" id="img-selector" class=" js__profile-upload-btn hidden">
+            <input type="file" name="" id="img-selector" class=" js__profile-upload-btn hidden" required>
             <div class="photo__box">
-                <button type="button" class="form__field form__field-photo js__profile-trigger"> Añadir imagen</button>
+                <button type="button" class="form__field form__field-photo js__profile-trigger" required> Añadir imagen</button>
                 <div class="preview__photo js__profile-preview"></div>
             </div>
         </div>
         <div class="fill__items items-email">
             <label class="field__tag tag-mail" for="mail">email</label>
-            <input class="form__field form__field-mail" type="email" id="mail" name="mail" placeholder="Ej:sally-hill@gmail.com">
+            <input class="form__field form__field-mail" type="email" id="mail" name="mail" placeholder="Ej:sally-hill@gmail.com" required>
         </div>
         <div class="fill__items items-phone">
             <label class="field__tag tag-phone" for="phone">teléfono</label>
@@ -31,11 +31,11 @@
         </div>
         <div class="fill__items items-linkedin">
             <label class="field__tag tag-linkedin" for="linkedin">linkedin</label>
-            <input class="form__field form__field-linkedin" type="text" id="linkedin" name="linkedin" placeholder="Ej:linkedin.com/in/sally.hill">
+            <input class="form__field form__field-linkedin" type="text" id="linkedin" name="linkedin" placeholder="Ej:linkedin.com/in/sally.hill" required>
         </div>
         <div class="fill__items items-github">
             <label class="field__tag tag-github" for="github">github</label>
-            <input class="form__field form__field-github" type="text" id="github" name="github" placeholder="Ej:@sally-hill">
+            <input class="form__field form__field-github" type="text" id="github" name="github" placeholder="Ej:@sally-hill" required>
         </div>
     </div>
 </fieldset>
