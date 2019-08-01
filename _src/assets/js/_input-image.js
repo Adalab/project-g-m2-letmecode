@@ -6,6 +6,9 @@ const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
 
+profileImage.style.backgroundImage = `url(${defaultImage})`;
+
+
 
 /**
  * Recoge el archivo añadido al campo de tipo "file"
@@ -33,6 +36,7 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
 }
+
 
 
 /**
