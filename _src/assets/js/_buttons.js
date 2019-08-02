@@ -14,7 +14,7 @@ function resetea(){
    previewLinkedIn.parentElement.classList.add('hidden');
    previewGitHub.parentElement.classList.add('hidden');
    profileImage.style.backgroundImage = `url(${defaultImage})`;
-
+   profilePreview.style.backgroundImage = `url()`;
 }
 
 
