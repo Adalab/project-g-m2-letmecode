@@ -2,6 +2,7 @@
 //crear tarjeta
 const successLink = document.querySelector('.success__link');
 let cardLink = ''; //link de tarjeta creada
+const baseUrl = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net';
 
 //añadir funcionalidad botón de twitter (compartir mensaje y url de la tarjeta creada)
 const submitButton = document.querySelector('.button-card');
@@ -15,15 +16,15 @@ function sendRequest() {
     palette: checkedRadio.value,
     name: inputName.value,
     job: inputJob.value,
-    email: inputPhone.value,
-    phone: inputEmail.value,
+    email: inputEmail.value,
+    phone: inputPhone.value,
     linkedin: inputLinkedIn.value,
     github: formatGithubUserName(inputGitHub.value),
     photo: fr.result
   };
   const json = JSON.stringify(requestData);
-
-  return fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+  const url = baseUrl + '/card/';
+  return fetch(url, {
     method: 'POST',
     body: json,
     headers: {
