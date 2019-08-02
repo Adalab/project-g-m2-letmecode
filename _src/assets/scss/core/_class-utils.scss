@@ -69,6 +69,7 @@
   @include button-reset();
   padding: 5px 10px;
   font-size: $txt-sm;
+  display: inline-block;
   @include button-format ($blue-twitter, 3px, $box-shadow-button);
   @include link-none ($color-text-button);
 }
@@ -87,4 +88,8 @@
 .hidden {
   display: none !important;
 
+}
+
+.not-available{
+  background-color: $grey-off;
 }
