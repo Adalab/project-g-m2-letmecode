@@ -3,6 +3,12 @@
 const successLink = document.querySelector('.success__link');
 let cardLink = ''; //link de tarjeta creada
 
+//añadir funcionalidad botón de twitter (compartir mensaje y url de la tarjeta creada)
+const submitButton = document.querySelector('.button-card');
+const twitterShareCard = document.querySelector('.form__success-twitter');
+const twitterButton = document.querySelector('.button-twitter');
+
+//Funciones api, url y twitter
 function sendRequest() {
   const checkedRadio = document.querySelector('input[name="palette"]:checked');
   const requestData = {
@@ -45,11 +51,6 @@ function showURL(data) {
   }
 }
 
-//añadir funcionalidad botón de twitter (compartir mensaje y url de la tarjeta creada)
-const submitButton = document.querySelector('.button-card');
-const twitterShareCard = document.querySelector('.form__success-twitter');
-const twitterButton = document.querySelector('.button-twitter');
-
 function showTwitterData() {
   twitterShareCard.classList.remove('hidden');
 
@@ -58,6 +59,10 @@ function showTwitterData() {
   twitterButton.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${cardLink}&hashtags=${hashtags}`;
 }
 
+
+//añadir localStorage comprobación
+
+//Listener submit
 form.addEventListener('submit', function(event){
   event.preventDefault();
   submitButton.classList.add('not-available');
