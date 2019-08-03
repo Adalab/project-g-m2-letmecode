@@ -22,7 +22,6 @@
        "_src/assets/js/_form.js",
        "_src/assets/js/_default-image.js",
        "_src/assets/js/_input-image.js",
-       "_src/assets/js/_local-storage.js",
        "_src/assets/js/_buttons.js"],
     "dest": "public/assets/js/",
     "dist": "docs/assets/js/"

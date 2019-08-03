@@ -16,7 +16,8 @@ const previewLinkedIn = document.querySelector('.linkedin__link');
 const previewGitHub = document.querySelector('.github__link');
 
 //Local-Storage: lo primero que ocurre al recargar la página
-//guardo en LS input name
+
+//Guardo en LS input name
 const lsUserName = localStorage.getItem('user-name');
 
 if (lsUserName) {
@@ -24,51 +25,48 @@ if (lsUserName) {
   inputName.value = lsUserName;
 }
 
-else {
-  previewName.innerHTML = 'Nombre Apellido';
-}
-//guardamos en LS input job
+//Guardamos en LS input job
 const lsUserJob = localStorage.getItem('user-job');
 if (lsUserJob) {
   previewJob.innerHTML = lsUserJob;
   inputJob.value = lsUserJob;
 }
-else {}
 
-//guardamos en LS el input del mail
+//Funcion para mostrar los iconos
+function showIcon(previewElement) {
+  previewElement.parentElement.classList.remove('hidden')
+}
+
+//Guardamos en LS el input del mail
 const lsUserMail = localStorage.getItem('user-mail');
 if (lsUserMail) {
   inputEmail.value = lsUserMail;
-  previewEmail.parentElement.classList.remove('hidden');
-
+  showIcon(previewEmail);
 }
-else {}
 
-//guardamos en LS el input del phone
+//Guardamos en LS el input del phone
 const lsUserPhone = localStorage.getItem('user-phone');
 if (lsUserPhone) {
   inputPhone.value = lsUserPhone;
-  previewPhone.parentElement.classList.remove('hidden');
+  showIcon(previewPhone);
 }
-else {}
 
-//guardamos en LS el input del linkedin
+//Guardamos en LS el input del linkedin
 const lsUserLinkedin = localStorage.getItem('user-linkedin');
 if (lsUserLinkedin) {
   inputLinkedIn.value = lsUserLinkedin;
-  previewLinkedIn.parentElement.classList.remove('hidden');
+  showIcon(previewLinkedIn);
 }
-else {}
 
-//guardamos en LS el input del gitHub
+//Guardamos en LS el input del gitHub
 const lsUserGithub = localStorage.getItem('user-github');
 if (lsUserGithub) {
   inputGitHub.value = lsUserGithub;
-  previewGitHub.parentElement.classList.remove('hidden');
+  showIcon(previewGitHub);
 }
-else {}
 
-//Functions
+
+//Functions - input handlers
 function onNameInput() {
   const newValue = event.currentTarget.value;
     if (newValue) {
