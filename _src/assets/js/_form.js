@@ -15,20 +15,47 @@ const previewEmail = document.querySelector('.email__link');
 const previewLinkedIn = document.querySelector('.linkedin__link');
 const previewGitHub = document.querySelector('.github__link');
 
+//Local-Storage: lo primero que ocurre al recargar la página
+//guardo en LS input name
+const lsUserName = localStorage.getItem('user-name');
+
+if (lsUserName) {
+  previewName.innerHTML = lsUserName;
+  inputName.value = lsUserName;
+}
+
+else {
+  previewName.innerHTML = 'Nombre Apellido';
+}
+//guardo en LS input job
+const lsUserJob = localStorage.getItem('user-job');
+if (lsUserJob) {
+  previewJob.innerHTML = lsUserJob;
+  inputJob.value = lsUserJob;
+}
+else {}
+
+
 //Functions
 function onNameInput(event) {
-    if (event.currentTarget.value) {
-        previewName.innerHTML = event.currentTarget.value;
+  const newValue = event.currentTarget.value;
+    if (newValue) {
+        previewName.innerHTML = newValue;
+        localStorage.setItem('user-name', newValue );
     } else {
-        previewName.innerHTML = ('Nombre Apellidos');
+        previewName.innerHTML = 'Nombre Apellido';
+        localStorage.removeItem('user-name');
     }
 }
 
 function onJobInput(event) {
-    if (event.currentTarget.value) {
-        previewJob.innerHTML = event.currentTarget.value;
+  const newValue = event.currentTarget.value;
+    if (newValue) {
+        previewJob.innerHTML = newValue;
+        localStorage.setItem('user-job', newValue);
     } else {
         previewJob.innerHTML = ('Front-end developer');
+        localStorage.removeItem('user-job');
     }
 }
 
