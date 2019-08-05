@@ -15,6 +15,7 @@ function resetea(){
    previewGitHub.parentElement.classList.add('hidden');
    profileImage.style.backgroundImage = `url(${defaultImage})`;
    profilePreview.style.backgroundImage = `url()`;
+   localStorage.clear();
 }
 
 

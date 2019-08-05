@@ -73,7 +73,13 @@ function onNameInput() {
         previewName.innerHTML = newValue;
         localStorage.setItem('user-name', newValue );
     } else {
-        previewName.innerHTML = 'Nombre Apellido';
+        pif (newValue) {
+          previewJob.innerHTML = newValue;
+          localStorage.setItem('user-job', newValue);
+      } else {
+          previewJob.innerHTML = ('Front-end developer');
+          localStorage.removeItem('user-job');
+      }reviewName.innerHTML = 'Nombre Apellido';
         localStorage.removeItem('user-name');
     }
 }
