@@ -35,6 +35,11 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  if (fr.result) {
+        localStorage.setItem('user-image', fr.result);
+    } else {
+        localStorage.removeItem('user-image');
+    }
 }
 
 
