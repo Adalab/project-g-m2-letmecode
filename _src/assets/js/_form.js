@@ -59,12 +59,16 @@ function onLinkedInInput() {
     previewLinkedIn.href = `//linkedin.com/in/${inputLinkedIn.value}`;
 }
 
-function onGitHubInput() {
-    let userName = inputGitHub.value;
+function formatGithubUserName (userName) {
+  if (userName[0] === '@') {
+    userName = userName.substring(1);
+  }
+  return userName;
+}
 
-    if (userName[0] === '@') {
-        userName = userName.substring(1);
-    }
+function onGitHubInput() {
+    let userName = formatGithubUserName(inputGitHub.value);
+
     if (event.currentTarget.value) {
         previewGitHub.parentElement.classList.remove('hidden');
     } else {
