@@ -15,6 +15,7 @@
   color: $color;
   text-decoration: none;
 }
+
 @mixin font-lg {
   font-family: $font-open;
   font-size: $txt-lg;
@@ -28,10 +29,11 @@
   align-items: center;
 }
 
-@mixin flex-between {
+@mixin flex-between-column {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
 }
 
 //buttons

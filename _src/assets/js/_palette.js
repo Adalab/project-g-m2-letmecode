@@ -18,13 +18,13 @@ const palette = {
 
 function colorea() {
   if (palette[1] === lsPaletteColor) {
-    inputRadio1.checked=true;
+    inputRadio1.checked = true;
   }
   if (palette[2] === lsPaletteColor) {
-    inputRadio2.checked=true;
+    inputRadio2.checked = true;
   }
   if (palette[3] === lsPaletteColor) {
-    inputRadio3.checked=true;
+    inputRadio3.checked = true;
   }
 }
 

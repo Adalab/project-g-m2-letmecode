@@ -8,18 +8,18 @@
   @media all and (min-width:$tablet) {
     justify-content:flex-start;
     height:110px;
-    }
+  }
 }
 
 .header__title {
-background-image: url('../images/tarjetas-molonas.png');
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
-color:white;
-height:1px;
-padding-top:107px;
-overflow:hidden;
-margin:0 35px;
-width:200px;
+  background-image: url('../images/tarjetas-molonas.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color:white;
+  height:1px;
+  padding-top:107px;
+  overflow:hidden;
+  margin:0 35px;
+  width:200px;
 }

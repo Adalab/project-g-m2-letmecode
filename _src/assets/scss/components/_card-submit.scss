@@ -1,5 +1,5 @@
 .form__submit {
-    text-align: center;
+  text-align: center;
 }
 
 .form__button {
@@ -7,18 +7,18 @@
 }
 
 .fa-address-card {
-    font-size: $txt-xl;
+  font-size: $txt-xl;
 }
 
 .form__button-text {
-    @include font-lg;
-    color: $color-text-button;
-    text-transform: uppercase;
+  @include font-lg;
+  color: $color-text-button;
+  text-transform: uppercase;
 }
 
 .form__success {
-    text-align: center;
-    padding: 20px 0 30px;
+  text-align: center;
+  padding: 20px 0 30px;
 }
 
 .form__success-twitter {
@@ -27,28 +27,28 @@
 }
 
 .succes__title {
-    margin: 0;
-    text-transform: none;
-    @include font-lg;
+  margin: 0;
+  text-transform: none;
+  @include font-lg;
 }
 
 .success__link {
-    display: block;
-    margin: 10px 0;
-    @include link-none($orange);
-    @include font-lg;
-    font-size: $txt-xs;
+  display: block;
+  margin: 10px 0;
+  @include link-none($orange);
+  @include font-lg;
+  font-size: $txt-xs;
 }
 
 .success__button-twitter {
-    font-family: $font-open;
-    font-size: $txt-sm;
-    display: flex;
-    margin: 0 auto;
+  font-family: $font-open;
+  font-size: $txt-sm;
+  display: flex;
+  margin: 0 auto;
 
 }
 
 .fa-twitter {
-    font-size: $txt-lg;
-    margin-right: 10px;
+  font-size: $txt-lg;
+  margin-right: 10px;
 }

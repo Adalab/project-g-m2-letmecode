@@ -45,7 +45,7 @@ const onFormClick = (event) => {
 
     openCollapsable(header);
   }
-}
+};
 
 //listeners
 form.addEventListener('click', onFormClick);

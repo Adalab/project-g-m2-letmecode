@@ -145,10 +145,10 @@ function onGitHubInput() {
 
   if (newValue) {
     previewGitHub.parentElement.classList.remove('hidden');
-    localStorage.setItem('user-github', newValue)
+    localStorage.setItem('user-github', newValue);
   } else {
     previewGitHub.parentElement.classList.add('hidden');
-    localStorage.removeItem('user-github', newValue)
+    localStorage.removeItem('user-github', newValue);
   }
   previewGitHub.href = `//github.com/${userName}`;
 }
