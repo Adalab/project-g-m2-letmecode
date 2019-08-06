@@ -11,6 +11,9 @@ bower_components
 .AppleDouble
 .LSOverride
 
+### vs code ###
+.vscode
+
 # Thumbnails
 ._*
 
