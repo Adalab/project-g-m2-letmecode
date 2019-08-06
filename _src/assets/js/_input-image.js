@@ -7,13 +7,17 @@ const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
 
 const lsUserImage = localStorage.getItem('user-image');
+let requestData = {}
+let userNewImage = '';
 
+if (lsUserImage) {
+    profileImage.style.backgroundImage = `url(${lsUserImage})`;
+    userNewImage = lsUserImage;
+    fileField.removeAttribute('required');
+} else {
+    profileImage.style.backgroundImage = `url(${defaultImage})`;
+    requestData.photo = `url(${userNewImage})`;
 
-if(lsUserImage) {
-  profileImage.style.backgroundImage = `url(${lsUserImage})`;
-}
-else {
-  profileImage.style.backgroundImage = `url(${defaultImage})`;
 }
 
 
@@ -26,9 +30,9 @@ else {
  * @param {evento} e
  */
 function getImage(e) {
-  var myFile = e.currentTarget.files[0];
-  fr.addEventListener('load', writeImage);
-  fr.readAsDataURL(myFile);
+    var myFile = e.currentTarget.files[0];
+    fr.addEventListener('load', writeImage);
+    fr.readAsDataURL(myFile);
 }
 
 
@@ -37,16 +41,17 @@ function getImage(e) {
  * trabajar con ellos ;)
  */
 function writeImage() {
-  /* En la propiedad `result` de nuestro FR se almacena
-   * el resultado
-   */
-  profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
-  if (fr.result) {
-    localStorage.setItem('user-image', fr.result);
-  } else {
-    localStorage.removeItem('user-image');
-  }
+    /* En la propiedad `result` de nuestro FR se almacena
+     * el resultado
+     */
+    profileImage.style.backgroundImage = `url(${fr.result})`;
+    profilePreview.style.backgroundImage = `url(${fr.result})`;
+    userNewImage = fr.result;
+    if (fr.result) {
+        localStorage.setItem('user-image', fr.result);
+    } else {
+        localStorage.removeItem('user-image');
+    }
 }
 
 
@@ -56,7 +61,7 @@ function writeImage() {
  * que está oculto
  */
 function fakeFileClick() {
-  fileField.click();
+    fileField.click();
 }
 
 /**
