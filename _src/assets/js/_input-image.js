@@ -12,6 +12,7 @@ let userNewImage = '';
 
 if (lsUserImage) {
     profileImage.style.backgroundImage = `url(${lsUserImage})`;
+    profilePreview.style.backgroundImage = `url(${lsUserImage})`;
     userNewImage = lsUserImage;
     fileField.removeAttribute('required');
 } else {
