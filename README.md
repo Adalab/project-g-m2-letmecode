@@ -17,11 +17,16 @@ Para trabajar con este repositorio, te recomendamos clonar en la misma carpeta e
 > ### Con esta web puedes generar tu propia tarjeta personal 👩🏻, con la que podrán comunicarse contigo vía teléfono 📲 o email 📩 . Además, contiene enlaces directos a tus perfiles en linkedIn y en GitHub para que puedan añadirte fácilmente otros usuarios 👥.
 
 ## ¿Te contamos los pasos?
-1️⃣ DISEÑA: Elige los colores que más te gusten de la paleta.🖍 \newline
-2️⃣ RELLENA: Rellena todos los campos con tus datos personales. El teléfono no es obligatorio. 📋 \newline
-3️⃣ Prepara tu mejor foto para subirla. 📸 \newline
-4️⃣ COMPARTE: Se generará automáticamente una URL con tu tarjeta, y un link para que puedas compartir tu tarjeta personal en Twitter 🐦 \newline
-5️⃣ Así de fácil! \newline
+
+1️⃣ DISEÑA: Elige los colores que más te gusten de la paleta.🖍
+
+2️⃣ RELLENA: Rellena todos los campos con tus datos personales. El teléfono no es obligatorio. 📋
+
+3️⃣ Prepara tu mejor foto para subirla. 📸
+
+4️⃣ COMPARTE: Se generará automáticamente una URL con tu tarjeta, y un link para que puedas compartir tu tarjeta personal en Twitter 🐦
+
+5️⃣ Así de fácil!
 
 
 ### Versión lista para subir a producción
@@ -41,9 +46,15 @@ La estructura de carpetas 📂 tiene esta estructura:
    |  |- js
    |  `- scss
    |     `- core
+		 `_components
    |
    `- templates
       `- partials
+/
+`- .git
+    docs
+    node_modules
+    public
 
 ```
 
