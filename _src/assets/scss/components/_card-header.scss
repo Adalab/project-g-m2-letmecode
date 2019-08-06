@@ -2,9 +2,7 @@
   background-color: $white;
   text-align: center;
   margin:0;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  @include flex-center;
   @media all and (min-width:$tablet) {
     justify-content:flex-start;
     height:110px;

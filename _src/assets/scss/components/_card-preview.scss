@@ -19,6 +19,7 @@
   padding: 20px 0 10px;
   margin-top: 20px;
 }
+
 .preview-card__title-container {
   margin: 0 0 10px;
   font-family: $font-montserrat;
@@ -78,6 +79,7 @@
 .social-list__link {
   @include link-none($green-dark);
 }
+
 /*estilos en colores verdes*/
 .preview-card-green {
   .preview-card__title-container {
@@ -99,11 +101,8 @@
   }
 }
 
-
-
 /*estilos en colores rojos*/
 .preview-card-red {
-
   .preview-card__title-container {
     &:before {
       background-color:$red;
@@ -111,7 +110,6 @@
     .preview-card__name {
       color:$red-dark;
     }
-
   }
   .social-list__item {
     border: 2px solid $tomato;
@@ -121,11 +119,8 @@
   }
 }
 
-
-//damos estilos a la tarjeta en paleta amarilla
-
+/*estilos en colores amarillos*/
 .preview-card-yellow {
-
   .preview-card__title-container {
     &:before {
       background-color:$yellow;
@@ -133,7 +128,6 @@
     .preview-card__name {
       color:$blue-dark;
     }
-
   }
   .social-list__item {
     border: 2px solid $blue-light;
@@ -141,5 +135,4 @@
   .social-list__link {
     @include link-none($blue-dark);
   }
-
 }

@@ -4,10 +4,9 @@
 }
 
 .collapsable__header {
+  cursor: pointer;
   padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 }
 
 .collapsable__title {
@@ -18,6 +17,7 @@
   margin: 0 10px;
   padding: 0;
 }
+
 .collapsable__item {
   height: 0;
   padding: 0;
