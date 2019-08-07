@@ -7,6 +7,7 @@
     font-size: $txt-xxl;
   }
 }
+
 .txt__landing--md {
   margin: 0;
   font-size: $txt-sm;
@@ -20,19 +21,10 @@
 .txt__color--orange {
   color: $orange;
 }
+
 .txt__color--grey-dark {
   color: $grey-dark;
 }
-
-// .txt__title--sm {
-//   margin: 0;
-//   font-size:
-//   font-family:
-//   @media all and (min-width: $tablet) {
-//     font-size:
-//   }
-// }
-
 
 /*buttons*/
 .button--start {
@@ -52,6 +44,7 @@
   @include button-format ($color-bg-card-button, 12px, $box-shadow-button-card);
   @include link-none ($color-text-button);
 }
+
 .button-card--check {
   background-color: $grey-off;
 }
@@ -69,6 +62,7 @@
   @include button-reset();
   padding: 5px 10px;
   font-size: $txt-sm;
+  display: inline-block;
   @include button-format ($blue-twitter, 3px, $box-shadow-button);
   @include link-none ($color-text-button);
 }
@@ -85,6 +79,9 @@
 
 //common
 .hidden {
-  display: none !important;
+  display: none;
+}
 
+.not-available{
+  background-color: $grey-off;
 }

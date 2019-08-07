@@ -10,21 +10,21 @@
     href="https://fonts.googleapis.com/css?family=Merriweather:900|Montserrat:400,700|Open+Sans:400,600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css" />
-
 </head>
 
 <body class="page__cards">
-    <partial src="_card-header.html"></partial>
-    <main class="card__main">
-        <partial src="_card-preview.html"></partial>
-        <form class="form__container" action="">
-            <partial src="_card-design.html"></partial>
-            <partial src="_card-fill.html"></partial>
-            <partial src="_card-submit.html"></partial>
-        </form>
-    </main>
-    <partial src="_footer.html"></partial>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+  <partial src="_card-header.html"></partial>
+  <main class="card__main">
+    <partial src="_card-preview.html"></partial>
+    <form class="form__container" action="POST">
+      <partial src="_card-design.html"></partial>
+      <partial src="_card-fill.html"></partial>
+      <partial src="_card-submit.html"></partial>
+    </form>
+  </main>
+  <partial src="_footer.html"></partial>
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>

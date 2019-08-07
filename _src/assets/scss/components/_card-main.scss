@@ -1,10 +1,10 @@
 .card__main {
-  @include bg-gradient($grey-light, $white);
-  padding-bottom: 20px;
+    @include bg-gradient($grey-light, $white);
+    padding-bottom: 30px;
     @media all and (min-width: $tablet) {
         display: flex;
         padding: 20px 40px 20px 20px;
-        flex-grow:1;
+        flex-grow: 1;
     }
 }
 

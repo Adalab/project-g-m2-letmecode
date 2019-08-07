@@ -6,8 +6,20 @@ const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
 
-profileImage.style.backgroundImage = `url(${defaultImage})`;
+const lsUserImage = localStorage.getItem('user-image');
+let requestData = {}
+let userNewImage = '';
 
+if (lsUserImage) {
+  profileImage.style.backgroundImage = `url(${lsUserImage})`;
+  profilePreview.style.backgroundImage = `url(${lsUserImage})`;
+  userNewImage = lsUserImage;
+  fileField.removeAttribute('required');
+} else {
+  profileImage.style.backgroundImage = `url(${defaultImage})`;
+  requestData.photo = `url(${userNewImage})`;
+
+}
 
 
 /**
@@ -18,7 +30,7 @@ profileImage.style.backgroundImage = `url(${defaultImage})`;
  * al tener los datos listos
  * @param {evento} e
  */
-function getImage(e){
+function getImage(e) {
   var myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
@@ -35,6 +47,12 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  userNewImage = fr.result;
+  if (fr.result) {
+    localStorage.setItem('user-image', fr.result);
+  } else {
+    localStorage.removeItem('user-image');
+  }
 }
 
 
@@ -44,7 +62,7 @@ function writeImage() {
  * que está oculto
  */
 function fakeFileClick() {
- fileField.click();
+  fileField.click();
 }
 
 /**

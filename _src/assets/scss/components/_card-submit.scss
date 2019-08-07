@@ -3,7 +3,7 @@
 }
 
 .form__button {
-  margin: 20px 0 30px;
+    margin: 20px 0 0;
 }
 
 .fa-address-card {
@@ -19,6 +19,12 @@
 .form__success {
     text-align: center;
     padding: 20px 0 30px;
+}
+
+.form__success-twitter {
+    border-top: solid 1px $grey-line;
+    padding-top: 20px;
+    margin-top: 30px;
 }
 
 .succes__title {
@@ -40,7 +46,6 @@
     font-size: $txt-sm;
     display: flex;
     margin: 0 auto;
-
 }
 
 .fa-twitter {
