@@ -32,7 +32,7 @@
                              <h5 class="preview-card__career">Front-end developer</h5>
 
                         </div>
-                        <div class="preview-card__img"></div>
+                        <div class="preview-card__img js__profile-image"></div>
                         <ul class="preview-card__social-list">
                             <li class="social-list__item hidden"> <a href="#phone" target="_blank" class="social-list__link phone__link">
                         <i class="fas fa-mobile-alt social-list__icon"></i>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </section>
-            <form class="form__container" action="">
+            <form class="form__container" action="POST">
                 <fieldset class="collapsable user_colors">
                     <div class="collapsable__header collapsable__colors"> <i class="far fa-object-ungroup txt__color--orange"></i>
 
@@ -70,7 +70,7 @@
                         <label class="palette__label" for="p1">colores</label>
                         <div class="palette__container-colors">
                             <div class="input-box">
-                                <input class="palette__radio js__radio1" id="p1" type="radio" value="preview-card-green"
+                                <input class="palette__radio js__radio1" id="p1" type="radio" value="1"
                                 name="palette" checked>
                                 <ul class="colors">
                                     <li class="square-color" style="background-color: #114e4e">dark green blue</li>
@@ -80,7 +80,7 @@
                             </div>
                             <label class="palette__label" for="p2"></label>
                             <div class="input-box">
-                                <input class="palette__radio js__radio2" id="p2" type="radio" value="preview-card-red"
+                                <input class="palette__radio js__radio2" id="p2" type="radio" value="2"
                                 name="palette">
                                 <ul class="colors">
                                     <li class="square-color" style="background-color: #420101">dried blood</li>
@@ -90,7 +90,7 @@
                             </div>
                             <label class="palette__label" for="p3"></label>
                             <div class="input-box">
-                                <input class="palette__radio js__radio3" id="p3" type="radio" value="preview-card-yellow"
+                                <input class="palette__radio js__radio3" id="p3" type="radio" value="3"
                                 name="palette">
                                 <ul class="colors">
                                     <li class="square-color" style="background-color: #3e5b65">slate</li>
@@ -112,39 +112,41 @@
                         <div class="fill__items items-name">
                             <label class="field__tag tag-name" for="FullName">nombre completo</label>
                             <input class="form__field form__field-name" type="text"
-                            id="FullName" name="FullName" placeholder="Ej: Sally Jill">
+                            id="FullName" name="FullName" placeholder="Ej: Sally Jill" required>
                         </div>
                         <div class="fill__items items-job">
                             <label class="field__tag tag-job" for="job">puesto</label>
                             <input class="form__field form__field-job" type="text" id="job"
-                            name="job" placeholder="Ej: Front-end unicorn">
+                            name="job" placeholder="Ej: Front-end unicorn" required>
                         </div>
                         <div class="fill__items items-photo">
-                            <label class="field__tag tag-photo" for="photo">Imagen de perfil</label>
+                            <label class="field__tag tag-photo" for="img-selector">Imagen de perfil</label>
+                            <input type="file" name="img-selector" id="img-selector"
+                            class=" js__profile-upload-btn no-visible" required>
                             <div class="photo__box">
-                                <button class="form__field form__field-photo">Añadir imagen</button>
-                                <div class="preview__photo"></div>
+                                <button type="button" class="form__field form__field-photo js__profile-trigger">Añadir imagen</button>
+                                <div class="preview__photo js__profile-preview"></div>
                             </div>
-                        </div>
-                        <div class="fill__items items-email">
-                            <label class="field__tag tag-mail" for="mail">email</label>
-                            <input class="form__field form__field-mail" type="email"
-                            id="mail" name="mail" placeholder="Ej:sally-hill@gmail.com">
                         </div>
                         <div class="fill__items items-phone">
                             <label class="field__tag tag-phone" for="phone">teléfono</label>
                             <input class="form__field form__field-phone" type="tel"
                             id="phone" name="phone" placeholder="Ej:555-55-55-55">
+                            <div class="fill__items items-email">
+                                <label class="field__tag tag-mail" for="mail">email</label>
+                                <input class="form__field form__field-mail" type="email"
+                                id="mail" name="mail" placeholder="Ej:sally-hill@gmail.com" required>
+                            </div>
                         </div>
                         <div class="fill__items items-linkedin">
                             <label class="field__tag tag-linkedin" for="linkedin">linkedin</label>
                             <input class="form__field form__field-linkedin" type="text"
-                            id="linkedin" name="linkedin" placeholder="Ej:linkedin.com/in/sally.hill">
+                            id="linkedin" name="linkedin" placeholder="Ej:sally.hill" required>
                         </div>
                         <div class="fill__items items-github">
                             <label class="field__tag tag-github" for="github">github</label>
                             <input class="form__field form__field-github" type="text"
-                            id="github" name="github" placeholder="Ej:@sally-hill">
+                            id="github" name="github" placeholder="Ej:@sally-hill" required>
                         </div>
                     </div>
                 </fieldset>
@@ -156,28 +158,31 @@
 
                     </div>
                     <div class="form__submit collapsable__container collapsable__item">
-                        <button type="submit" class="form__button button-card"> <i class="far fa-address-card"></i>
+                        <div class="form__success-button collapsable__container">
+                            <button type="submit" class="form__button button-card"> <i class="far fa-address-card"></i>
  <span class="form__button-text">Crear tarjeta</span>
 
-                        </button>
+                            </button>
+                        </div>
+                        <div class="form__success-twitter collapsable__container hidden">
+                             <h2 class="succes__title txt__color--grey-dark">La tarjeta ha sido creada con exito</h2>
+ <a href="" class="success__link" target="_blank"></a>
+ <a href="" class="success__button-twitter button-twitter twitter-share-button"
+                            target="_blank">
+                <i class="fab fa-twitter "></i>
+                <span class="success__button-text">Compartir en twitter</span>
+            </a>
+
+                        </div>
                     </div>
-                </div>
-                <div class="form__success collapsable collapsable__container">
-                     <h2 class="succes__title txt__color--grey-dark">La tarjeta ha sido creada con exito</h2>
- <a href="" class="success__link">url??????</a>
-
-                    <button class="success__button-twitter button-twitter"> <i class="fab fa-twitter "></i>
- <span class="success__button-text">Compartir en twitter</span>
-
-                    </button>
                 </div>
             </form>
         </main>
         <footer class="page__footer"> <span class="footer__copyright">Awesome profile-cards @2019</span>
  <a class="footer__link"
             href="https://adalab.es/" target="blank">
-      <img class="footer__logo" src="assets/images/logo-adalab-80px.png" alt="Logotipo de Adalab" />
-    </a>
+    <img class="footer__logo" src="assets/images/logo-adalab-80px.png" alt="Logotipo de Adalab" />
+  </a>
 
         </footer>
         <script type="text/javascript" src="assets/js/main.js"></script>
