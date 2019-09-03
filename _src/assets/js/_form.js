@@ -65,7 +65,6 @@ if (lsUserGithub) {
   showIcon(previewGitHub);
 }
 
-
 //Functions - input handlers
 
 function onNameJobInputs(newValue,previewValue,varNameLS,defaultMessage){
