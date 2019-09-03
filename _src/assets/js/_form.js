@@ -67,45 +67,41 @@ if (lsUserGithub) {
 
 
 //Functions - input handlers
+
+function onNameJobInputs(newValue,previewValue,varNameLS,defaultMessage){
+  if (newValue) {
+    previewValue.innerHTML = newValue;
+    localStorage.setItem(varNameLS, newValue);
+  } else {
+    previewValue.innerHTML = defaultMessage;
+    localStorage.removeItem(varNameLS);
+  }
+}
+
 function onNameInput() {
   const newValue = event.currentTarget.value;
-  if (newValue) {
-    previewName.innerHTML = newValue;
-    localStorage.setItem('user-name', newValue);
-  } else {
-    if (newValue) {
-      previewJob.innerHTML = newValue;
-      localStorage.setItem('user-job', newValue);
-    } else {
-      previewJob.innerHTML = ('Front-end developer');
-      localStorage.removeItem('user-job');
-    } reviewName.innerHTML = 'Nombre Apellido';
-    localStorage.removeItem('user-name');
-  }
+  onNameJobInputs(newValue, previewName,'user-name','Nombre Apellido');
 }
 
 function onJobInput() {
   const newValue = event.currentTarget.value;
+  onNameJobInputs(newValue,previewJob,'user-job','Front-end developer');
+}
+
+function onIconInputs(newValue,previewValue,varNameLS){
   if (newValue) {
-    previewJob.innerHTML = newValue;
-    localStorage.setItem('user-job', newValue);
+    previewValue.parentElement.classList.remove('hidden');
+    localStorage.setItem(varNameLS, newValue);
   } else {
-    previewJob.innerHTML = ('Front-end developer');
-    localStorage.removeItem('user-job');
+    previewValue.parentElement.classList.add('hidden');
+    localStorage.removeItem(varNameLS);
   }
 }
 
 function onEmailInput() {
   const newValue = event.currentTarget.value;
-  if (newValue) {
-    previewEmail.parentElement.classList.remove('hidden');
-    localStorage.setItem('user-mail', newValue);
-  } else {
-    previewEmail.parentElement.classList.add('hidden');
-    localStorage.removeItem('user-mail');
-  }
+  onIconInputs(newValue, previewEmail, 'user-mail');
   previewEmail.href = `mailto:${inputEmail.value}`;
-
 }
 
 function onPhoneInput() {
