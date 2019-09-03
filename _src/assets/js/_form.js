@@ -106,25 +106,13 @@ function onEmailInput() {
 
 function onPhoneInput() {
   const newValue = event.currentTarget.value;
-  if (newValue) {
-    previewPhone.parentElement.classList.remove('hidden');
-    localStorage.setItem('user-phone', newValue);
-  } else {
-    previewPhone.parentElement.classList.add('hidden');
-    localStorage.removeItem('user-phone');
-  }
+  onIconInputs(newValue, previewPhone, 'user-phone');
   previewPhone.href = `tel:${inputPhone.value}`;
 }
 
 function onLinkedInInput() {
   const newValue = event.currentTarget.value;
-  if (newValue) {
-    previewLinkedIn.parentElement.classList.remove('hidden');
-    localStorage.setItem('user-linkedin', newValue);
-  } else {
-    previewLinkedIn.parentElement.classList.add('hidden');
-    localStorage.removeItem('user-linkedin');
-  }
+  onIconInputs(newValue, previewLinkedIn, 'user-linkedin');
   previewLinkedIn.href = `//linkedin.com/in/${inputLinkedIn.value}`;
 }
 
@@ -138,14 +126,7 @@ function formatGithubUserName(userName) {
 function onGitHubInput() {
   let userName = formatGithubUserName(inputGitHub.value);
   const newValue = event.currentTarget.value;
-
-  if (newValue) {
-    previewGitHub.parentElement.classList.remove('hidden');
-    localStorage.setItem('user-github', newValue);
-  } else {
-    previewGitHub.parentElement.classList.add('hidden');
-    localStorage.removeItem('user-github', newValue);
-  }
+  onIconInputs(newValue, previewGitHub, 'user-github');
   previewGitHub.href = `//github.com/${userName}`;
 }
 //listeners
